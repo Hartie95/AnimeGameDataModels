@@ -4,6 +4,8 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
 import org.anime_game_servers.game_data_models.data.general.LogicType
+import org.anime_game_servers.game_data_models.data.general.TextMapHash
+import org.anime_game_servers.game_data_models.data.general.UnsetTextMap
 import org.anime_game_servers.game_data_models.data.helpers.nullableEnumValueOfOrDefault
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
 
@@ -58,9 +60,9 @@ data class SubQuestData(
     val exclusivePlaceList: List<Int>? = null,
 
     // Textmaps
-    val descTextMapHash: Long = -1,
-    val stepDescTextMapHash: Long = -1,
-    val guideTipsTextMapHash: Long = -1,
+    val descTextMapHash: TextMapHash = UnsetTextMap,
+    val stepDescTextMapHash: TextMapHash = UnsetTextMap,
+    val guideTipsTextMapHash: TextMapHash = UnsetTextMap,
 
     //custom elements
     var gainItems: List<GainItem>? = null,

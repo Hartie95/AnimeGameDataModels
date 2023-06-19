@@ -5,6 +5,12 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonNames
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
 
+/**
+ * TODO Add documentation
+ * These are known names for files handled by this class:
+ * ExcelBinOutput/TalkExcelConfigData.json
+ * txt/TalkData*.txt (with an appropriate parser)
+ */
 @Serializable
 @OptIn(ExperimentalSerializationApi::class)
 data class TalkData(
@@ -83,6 +89,7 @@ data class TalkData(
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class BeginCond(
+    // TODO create enum for type
     @JsonNames("type", "_type")
     val type: String? = null,
     @JsonNames("params", "_params", "_param")

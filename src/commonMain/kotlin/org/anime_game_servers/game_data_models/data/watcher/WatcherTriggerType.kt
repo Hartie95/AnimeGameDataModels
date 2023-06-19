@@ -3,6 +3,10 @@ package org.anime_game_servers.game_data_models.data.watcher
 import kotlinx.serialization.Serializable
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
 
+/**
+ * TODO document
+ * @param id int representation of the enum entry
+ */
 @Serializable
 enum class WatcherTriggerType(val id: Int) : IntKey {
     TRIGGER_NONE (0),

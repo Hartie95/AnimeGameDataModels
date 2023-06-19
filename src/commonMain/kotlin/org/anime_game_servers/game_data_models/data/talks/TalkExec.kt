@@ -7,6 +7,7 @@ import kotlinx.serialization.json.JsonNames
 @Serializable
 @OptIn(ExperimentalSerializationApi::class)
 data class TalkExec(
+    //TODO create enum for type
     @JsonNames("type", "_type")
     val type: String? = null,
     @JsonNames("param", "_param")

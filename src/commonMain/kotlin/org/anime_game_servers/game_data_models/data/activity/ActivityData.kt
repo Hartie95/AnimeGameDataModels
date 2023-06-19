@@ -1,6 +1,9 @@
 package org.anime_game_servers.game_data_models.data.activity
 
 import kotlinx.serialization.ExperimentalSerializationApi
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.Transient
 import kotlinx.serialization.json.JsonNames
 import org.anime_game_servers.game_data_models.data.general.TextMapHash
 import org.anime_game_servers.game_data_models.data.general.UnsetTextMap
@@ -14,10 +17,16 @@ import org.anime_game_servers.game_data_models.data.interfaces.IntKey
  * txt/NewActivityData.txt (with an appropriate parser)
  */
 @OptIn(ExperimentalSerializationApi::class)
+@Serializable
 data class ActivityData(
     val activityId: Int,
+    @SerialName("activityType")
     val activityTypeString: String? = null,
-    val activityType: ActivityType? = nullableEnumValueOfOrDefault(activityTypeString, ActivityType.NEW_ACTIVITY_UNKNOWN),
+    @Transient
+    val activityType: ActivityType? = nullableEnumValueOfOrDefault(
+        activityTypeString,
+        ActivityType.NEW_ACTIVITY_UNKNOWN
+    ),
     val activitySceneTag: String? = null,
     @JsonNames("condGroupIds", "condGroupId")
     val condGroupIds: List<Int>? = null,
@@ -29,6 +38,6 @@ data class ActivityData(
 
     val nameTextMapHash: TextMapHash = UnsetTextMap,
 
-) : IntKey {
+    ) : IntKey {
     override fun getIntKey() = activityId
 }

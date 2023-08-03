@@ -143,12 +143,14 @@ enum class ActivityType(val id: Int) : IntKey {
 
     /**
      * This is the 1.3 "[Lantern Rite](https://genshin-impact.fandom.com/wiki/Lantern_Rite)" event
+     * This event also uses special activity groups in `Activity/2002/`
      * TODO document used models
      */
     NEW_ACTIVITY_SEA_LAMP_NEW(1302),
 
     /**
      * This is the 1.4 "[Invitation of Windlbume](https://genshin-impact.fandom.com/wiki/Invitation_of_Windblume)" Event.
+     * This event also uses special activity groups in `Activity/2003/`
      * TODO document used models
      */
     NEW_ACTIVITY_FLEUR_FAIR(1400),

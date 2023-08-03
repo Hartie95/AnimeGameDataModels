@@ -6,68 +6,86 @@ enum class QuestContentType(val id: Int) : IntKey {
     QUEST_CONTENT_NONE(0),
 
     /**
-     * TODO document specifics
-     * (currently unused on official)
+     * Same as [QUEST_CONTENT_MONSTER_DIE]
+     * param [0]: monsterId of a monster that got killed
+     * (currently unused on official, handling is guessed)
      */
     QUEST_CONTENT_KILL_MONSTER(1),
 
     /**
-     * TODO document specifics
+     * Gets triggered when the client sends a [NpcTalkReq] packet
+     * param [0]: The id of the talk
      */
     QUEST_CONTENT_COMPLETE_TALK(2),
 
     /**
-     * TODO document specifics
+     * Gets triggered when a monster dies
+     * param [0]: monsterId of a monster that got killed
      */
     QUEST_CONTENT_MONSTER_DIE(3),
 
     /**
-     * TODO document specifics
+     * Gets triggered by the client via [AddQuestContentProgressReq] when a plot is finished
+     * param [0]: plotId of a plot that got finished
      */
     QUEST_CONTENT_FINISH_PLOT(4),
 
     /**
-     * TODO document specifics
+     * Gets triggered whenever the player obtains an item
+     * param [0]: itemId of an item that should be obtained
+     * param [1]: amount of the item that should be obtained
      */
     QUEST_CONTENT_OBTAIN_ITEM(5),
 
     /**
-     * TODO document specifics
+     * Gets triggered from the Lua handling, when a trigger gets fired that is defined in [TriggerData]
+     * param [0]: triggerId from [TriggerData] of a trigger that got fired
      */
     QUEST_CONTENT_TRIGGER_FIRE(6),
 
     /**
-     * TODO document specifics
+     * Gets triggered when all monsters from a group where killed
+     * param [0]: groupId of a group that should be cleared
      */
     QUEST_CONTENT_CLEAR_GROUP_MONSTER(7),
 
     /**
-     * TODO document specifics
+     * Gets triggered by the client via [AddQuestContentProgressReq] when a plot failed to finish
+     * param [0]: plotId of a plot that failed to be finished
      */
     QUEST_CONTENT_NOT_FINISH_PLOT(8),
 
     /**
-     * TODO document specifics
+     * Gets triggered when the player enters a dungeon/domain
+     * This might also trigger the server to add the Dungeon to the list of dungeons at that specific ScenePoint
+     * param [0]: dungeonId of a dungeon that got entered from [org.anime_game_servers.game_data_models.data.dungeon.DungeonData]
+     * param [1]: ScenePoint from which the player should enter the dungeon
      */
     QUEST_CONTENT_ENTER_DUNGEON(9),
 
     /**
-     * TODO document specifics
+     * Gets triggered when the player enters the specified scene in his own instance
+     * Difference to [QUEST_CONTENT_ENTER_MY_WORLD_SCENE] is unknown
+     * param [0]: sceneId of a scene that should be entered
      */
     QUEST_CONTENT_ENTER_MY_WORLD(10),
 
     /**
-     * TODO document specifics
+     * Gets triggered when the player successfully completes a dungeon
+     * param [0]: dungeonId of a dungeon that should be completed
+     *            see also [org.anime_game_servers.game_data_models.data.dungeon.DungeonData]
      */
     QUEST_CONTENT_FINISH_DUNGEON(11),
 
     /**
-     * TODO document specifics
+     * Gets triggered whenever a gadgetEntity gets destroyed
+     * param [0]: gadgetId of a gadgetEntity that should be destroyed
      */
     QUEST_CONTENT_DESTROY_GADGET(12),
 
     /**
-     * TODO document specifics
+     * Gets triggered for every item collected and checks the type of the item
+     * param [0]: the int representation of a [org.anime_game_servers.game_data_models.data.item.MaterialType]
      */
     QUEST_CONTENT_OBTAIN_MATERIAL_WITH_SUBTYPE(13),
 
@@ -90,22 +108,31 @@ enum class QuestContentType(val id: Int) : IntKey {
     QUEST_CONTENT_SEAL_BATTLE_RESULT(16),
 
     /**
-     * TODO document specifics
+     * Gets triggered when the player enters a scene of the type room
+     * param [0]: sceneId of a room scene that should be entered
      */
     QUEST_CONTENT_ENTER_ROOM(17),
 
     /**
-     * TODO document specifics
+     * Gets triggered every second on the game tick of the server. A tick equals one in game minute
+     * param [0]: amount of in game days that should be completed since the start of the quest
+     * paramsString: contains the start and end hour of the day that should be targeted
+     *         the format is `[startHour],[endHour]`
+     *         if endHour is smaller than startHour, while days to pass is bigger than 0,
+     *         and currentHour is smaller than endHour, we need to pass it one extra time
      */
     QUEST_CONTENT_GAME_TIME_TICK(18),
 
     /**
-     * TODO document specifics
+     * Gets triggered when the player fails a dungeon
+     * param [0]: dungeonId of a dungeon that should be failed.
+     *            see also [org.anime_game_servers.game_data_models.data.dungeon.DungeonData]
      */
     QUEST_CONTENT_FAIL_DUNGEON(19),
 
     /**
-     * TODO document specifics
+     * This gets triggered from ScriptLib via [AddQuestProgress] method
+     * paramString: Contains the name of the notify that gets passed to it
      */
     QUEST_CONTENT_LUA_NOTIFY(20),
 
@@ -115,17 +142,21 @@ enum class QuestContentType(val id: Int) : IntKey {
     QUEST_CONTENT_TEAM_DEAD(21),
 
     /**
-     * TODO document specifics
+     * Gets triggered when the client sends a [NpcTalkReq] packet
+     * paramString: contains the ids of talks separated by ','. Any of these can be triggered to complete this
      */
     QUEST_CONTENT_COMPLETE_ANY_TALK(22),
 
     /**
-     * TODO document specifics
+     * Gets triggered whenever the player unlocks a new transportation point
+     * param [0]: sceneId of a scene containing the transportation point
+     * param [1]: scenePointId of the transportation point
      */
     QUEST_CONTENT_UNLOCK_TRANS_POINT(23),
 
     /**
-     * TODO document specifics
+     * Get triggered via [QuestExecType.QUEST_EXEC_ADD_QUEST_PROGRESS]
+     * param [0]: The id of progress to add
      */
     QUEST_CONTENT_ADD_QUEST_PROGRESS(24),
 
@@ -279,7 +310,9 @@ enum class QuestContentType(val id: Int) : IntKey {
     QUEST_CONTENT_ENTER_MY_HOME_WORLD(132),
 
     /**
-     * TODO document specifics
+     * Gets triggered when the player enters the specified scene in his own instance
+     * Difference to [QUEST_CONTENT_ENTER_MY_WORLD] is unknown
+     * param [0]: sceneId of a scene that should be entered
      */
     QUEST_CONTENT_ENTER_MY_WORLD_SCENE(133),
 
@@ -346,7 +379,8 @@ enum class QuestContentType(val id: Int) : IntKey {
     QUEST_CONTENT_CAPTURE_USE_MATERIAL_LIST(145),
 
     /**
-     * TODO document specifics
+     * Gets triggered whenever the player enters a vehicle.
+     * params[0] = vehicle id the player should enter or 0 for any vehicle
      */
     QUEST_CONTENT_ENTER_VEHICLE(147),
 

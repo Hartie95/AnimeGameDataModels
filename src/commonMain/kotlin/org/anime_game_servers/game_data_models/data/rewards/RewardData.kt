@@ -3,6 +3,9 @@ package org.anime_game_servers.game_data_models.data.rewards
 import kotlinx.serialization.Serializable
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
 import org.anime_game_servers.game_data_models.data.quest.GainItem
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * This Contains all information about item rewards gained though multiple means.
@@ -25,20 +28,22 @@ import org.anime_game_servers.game_data_models.data.quest.GainItem
  * @property activityLimit limit of how much the player can get during a specific event schedule
  */
 @Serializable
+@DataFile("ExcelBinOutput/RewardExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/RewardData.txt", FileType.TSV, FolderType.EXCEL)
 data class RewardData(
     val rewardId: Int,
-    val hcoin: Int,
-    val scoin: Int,
-    val playerExp: Int,
+    val hcoin: Int = -1,
+    val scoin: Int = -1,
+    val playerExp: Int = -1,
     val rewardItemList: List<GainItem>,
     // custom
-    val characterExp: Int,
-    val friendshipExp: Int,
-    val resin: Int,
-    val outputSourceType: Int, //TODO what is this
-    val dailyLimit: Int,
-    val totalLimit: Int,
-    val activityLimit: Int,
+    val characterExp: Int = -1,
+    val friendshipExp: Int = -1,
+    val resin: Int = -1,
+    val outputSourceType: Int = -1, //TODO what is this
+    val dailyLimit: Int = -1,
+    val totalLimit: Int = -1,
+    val activityLimit: Int = -1,
 ) : IntKey {
     override fun getIntKey() = rewardId
 }

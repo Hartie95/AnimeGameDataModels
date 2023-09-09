@@ -1,6 +1,9 @@
 package org.anime_game_servers.game_data_models.data.activity.echo_shell
 
 import kotlinx.serialization.Serializable
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * This contains information about the maximum number of chests and echo shells that can be found in a dungeon that's
@@ -12,6 +15,8 @@ import kotlinx.serialization.Serializable
  * @property numberOfChests number of chests the player can find in this dungeon
  * @property numberOfEchoShells number of echo shells the player can find in this dungeon
  */
+@DataFile("ExcelBinOutput/EchoShellSummerTimeDungeonExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/EchoShellSummerTimeDungeon.txt", FileType.TSV, FolderType.EXCEL)
 @Serializable
 data class EchoShellSummerTimeDungeonData(
     val dungeonId: Int,

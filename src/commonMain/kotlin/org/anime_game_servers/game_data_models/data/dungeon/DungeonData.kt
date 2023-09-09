@@ -6,6 +6,9 @@ import kotlinx.serialization.Transient
 import org.anime_game_servers.game_data_models.data.general.TextMapHash
 import org.anime_game_servers.game_data_models.data.helpers.nullableEnumValueOfOrDefault
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * TODO document
@@ -13,6 +16,8 @@ import org.anime_game_servers.game_data_models.data.interfaces.IntKey
  * @property passRewardId id for an entry in [org.anime_game_servers.game_data_models.data.rewards.RewardData] that contains the data awarded on first pass. Not included in the client data
  * @property passRewardPreviewId id for an entry in [org.anime_game_servers.game_data_models.data.rewards.RewardPreviewData]. Might or might not be the same as the RewardData content. Client only
  */
+@DataFile("ExcelBinOutput/EchoShellSummerTimeDungeonExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/DungeonExcelConfigData.txt", FileType.TSV, FolderType.EXCEL)
 @Serializable
 data class DungeonData(
     val id: Int,

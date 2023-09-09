@@ -9,6 +9,9 @@ import org.anime_game_servers.game_data_models.data.general.TextMapHash
 import org.anime_game_servers.game_data_models.data.general.UnsetTextMap
 import org.anime_game_servers.game_data_models.data.helpers.nullableEnumValueOfOrDefault
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * TODO Add documentation
@@ -16,6 +19,8 @@ import org.anime_game_servers.game_data_models.data.interfaces.IntKey
  * ExcelBinOutput/NewActivityExcelConfigData.json
  * txt/NewActivityData.txt (with an appropriate parser)
  */
+@DataFile("ExcelBinOutput/NewActivityExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/NewActivityData.txt", FileType.TSV, FolderType.EXCEL)
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class ActivityData(

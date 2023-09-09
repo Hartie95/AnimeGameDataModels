@@ -8,7 +8,12 @@ import org.anime_game_servers.game_data_models.data.general.TextMapHash
 import org.anime_game_servers.game_data_models.data.general.UnsetTextMap
 import org.anime_game_servers.game_data_models.data.helpers.nullableEnumValueOfOrDefault
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
+@DataFile("ExcelBinOutput/QuestExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/QuestData*.txt", FileType.TSV, FolderType.EXCEL)
 @Serializable
 data class SubQuestData(
     val subId: Int,

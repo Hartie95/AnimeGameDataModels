@@ -8,6 +8,9 @@ import kotlinx.serialization.json.JsonNames
 import org.anime_game_servers.game_data_models.data.general.LogicType
 import org.anime_game_servers.game_data_models.data.helpers.nullableEnumValueOfOrDefault
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * This contains information about conditions during activities.
@@ -24,6 +27,9 @@ import org.anime_game_servers.game_data_models.data.interfaces.IntKey
  * @property onValidExec The list of ActivityActions to execute when the condition is valid
  * @property onInvalidExec The list of ActivityActions to execute when the condition is invalid
  */
+@DataFile("ExcelBinOutput/NewActivityCondExcelConfigData.json", FileType.JSON,FolderType.EXCEL)
+@DataFile("txt/NewActivityCondData.txt", FileType.TSV, FolderType.EXCEL)
+@DataFile("Patches/Activity/NewActivityCondData.json", FileType.JSON, FolderType.PATCH)
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class ActivityCondData(

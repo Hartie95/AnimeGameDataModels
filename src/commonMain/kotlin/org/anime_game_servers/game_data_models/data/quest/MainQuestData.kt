@@ -8,7 +8,13 @@ import org.anime_game_servers.game_data_models.data.general.TextMapHash
 import org.anime_game_servers.game_data_models.data.general.UnsetTextMap
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
 import org.anime_game_servers.game_data_models.data.talks.TalkData
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
+@DataFile("ExcelBinOutput/MainQuestExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("BinOutput/Quest/*.json", FileType.JSON, FolderType.BINOUT)
+@DataFile("txt/MainQuestData*.txt", FileType.TSV, FolderType.EXCEL)
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class MainQuestData(

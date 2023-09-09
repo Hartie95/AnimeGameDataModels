@@ -6,6 +6,9 @@ import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonNames
 import org.anime_game_servers.game_data_models.data.general.UnsetInt
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * TODO Add documentation
@@ -13,6 +16,8 @@ import org.anime_game_servers.game_data_models.data.general.UnsetInt
  * ExcelBinOutput/GlobalWatcherConfigData.json
  * txt/GlobalWatcherData.txt (with an appropriate parser)
  */
+@DataFile("ExcelBinOutput/GlobalWatcherConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/GlobalWatcherData.txt", FileType.TSV, FolderType.EXCEL)
 @Serializable
 data class GlobalWatcherData(
     override val id: Int,

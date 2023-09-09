@@ -2,6 +2,9 @@ package org.anime_game_servers.game_data_models.data.quest
 
 import kotlinx.serialization.Serializable
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * Lists int representations of lua triggers as int representation,
@@ -13,6 +16,8 @@ import org.anime_game_servers.game_data_models.data.interfaces.IntKey
  * @param groupId The group id containing the trigger
  * @param triggerName The name of the trigger from the lua group file
  */
+@DataFile("ExcelBinOutput/TriggerExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/TriggerData*.txt", FileType.TSV, FolderType.EXCEL)
 @Serializable
 data class TriggerData(
     val id:Int,

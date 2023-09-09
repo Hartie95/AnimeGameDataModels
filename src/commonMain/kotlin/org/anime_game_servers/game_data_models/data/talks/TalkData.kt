@@ -4,6 +4,9 @@ import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonNames
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * TODO Add documentation
@@ -11,6 +14,8 @@ import org.anime_game_servers.game_data_models.data.interfaces.IntKey
  * ExcelBinOutput/TalkExcelConfigData.json
  * txt/TalkData*.txt (with an appropriate parser)
  */
+@DataFile("ExcelBinOutput/TalkExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/TalkData*.txt", FileType.TSV, FolderType.EXCEL)
 @Serializable
 @OptIn(ExperimentalSerializationApi::class)
 data class TalkData(
@@ -33,7 +38,7 @@ data class TalkData(
     @JsonNames("priority", "_priority")
     val priority: Int = -1,
     @JsonNames("initDialog", "_initDialog")
-    val initDialog: Int = -1,
+    val initDialog: Long = -1,
     @JsonNames("npcIds", "_npcId", "npcId")
     val npcIds: List<Int>? = null,
     @JsonNames("performCfg", "_performCfg")

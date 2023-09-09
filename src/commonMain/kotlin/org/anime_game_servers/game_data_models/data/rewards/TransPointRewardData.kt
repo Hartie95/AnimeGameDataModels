@@ -2,6 +2,10 @@ package org.anime_game_servers.game_data_models.data.rewards
 
 import kotlinx.serialization.Serializable
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
+import kotlin.jvm.JvmStatic
 
 /**
  * These are the rewards for unlocking specific scene points in the game.
@@ -14,13 +18,19 @@ import org.anime_game_servers.game_data_models.data.interfaces.IntKey
  * @property unlockAreaId id of the area to unlock
  * @property notificationGroupId TODO what is this
  */
+@DataFile("ExcelBinOutput/TransPointRewardConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/TransPointRewardData.txt", FileType.TSV, FolderType.EXCEL)
 @Serializable
 data class TransPointRewardData(
     val sceneId: Int,
     val pointId: Int,
     val rewardId: Int,
-    val unlockAreaId: Int,
-    val notificationGroupId: Int,
+    val unlockAreaId: List<Int>,
+    val notificationGroupId: List<Int>,
 ) : IntKey {
-    override fun getIntKey() = (pointId shl 8) + sceneId
+    override fun getIntKey() = getKey(sceneId, pointId)
+    companion object {
+        @JvmStatic
+        fun getKey(sceneId: Int, pointId: Int) = (pointId shl 8) + sceneId
+    }
 }

@@ -2,6 +2,9 @@ package org.anime_game_servers.game_data_models.data.activity.echo_shell
 
 import kotlinx.serialization.Serializable
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * Rewards for collecting echo shells during the echo shell activity/event.
@@ -12,6 +15,8 @@ import org.anime_game_servers.game_data_models.data.interfaces.IntKey
  * @property rewardId id of the reward found in [org.anime_game_servers.game_data_models.data.rewards.RewardData]
  * @property shellCount minimum number of shells the user needs to collect to qualify for this reward
  */
+@DataFile("ExcelBinOutput/EchoShellRewardExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("txt/EchoShellRewardData.txt", FileType.TSV, FolderType.EXCEL)
 @Serializable
 data class EchoShellRewardData(
     val id: Int,

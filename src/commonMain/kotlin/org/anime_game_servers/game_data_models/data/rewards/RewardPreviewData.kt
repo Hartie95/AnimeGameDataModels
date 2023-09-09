@@ -2,13 +2,17 @@ package org.anime_game_servers.game_data_models.data.rewards
 
 import kotlinx.serialization.Serializable
 import org.anime_game_servers.game_data_models.data.interfaces.StringKey
+import org.anime_game_servers.game_data_models.loader.DataFile
+import org.anime_game_servers.game_data_models.loader.FileType
+import org.anime_game_servers.game_data_models.loader.FolderType
 
 /**
  * TODO document
  * This file is only part of the client data and not used on the server side.
  * These are known names for files handled by this class:
- * ExcelBinOutput/EchoShellPreviewExcelConfigData.json
+ * ExcelBinOutput/RewardPreviewExcelConfigData.json
  */
+@DataFile("ExcelBinOutput/RewardPreviewExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
 @Serializable
 data class RewardPreviewData(
     val desc:String,

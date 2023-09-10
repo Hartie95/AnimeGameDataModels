@@ -10,7 +10,7 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_GENERAL(0),
 
     /**
-     * Closed beta lantern rite has its own activity specific packages.
+     * Closed beta (CB2) lantern rite has its own activity specific packages.
      * This event also uses special activity groups in `Activity/1001/`
      * TODO document used models
      */
@@ -372,7 +372,7 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_MOONFIN_BANNER(2204),
 
     /**
-     * TODO identify this activity
+     * This is the "[Shadows Amidst Snowstorms](https://genshin-impact.fandom.com/wiki/Shadows_Amidst_Snowstorms)" Event from version 2.3.
      * TODO document used models
      */
     NEW_ACTIVITY_WINTER_CAMP(2301),
@@ -396,7 +396,7 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_TANUKI_TRAVEL(2401),
 
     /**
-     * TODO identify this activity
+     * This is the "[Fleeting Colors in Flight](https://genshin-impact.fandom.com/wiki/Fleeting_Colors_in_Flight)"/Lantern rite Event from version 2.4.
      * TODO document used models
      */
     NEW_ACTIVITY_SEA_LAMP_2_4(2402),
@@ -462,7 +462,7 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_ROGUE_DIARY(2704),
 
     /**
-     * TODO identify this activity
+     * This is the "[Summertime Odyssey](https://genshin-impact.fandom.com/wiki/Summertime_Odyssey)" Event from version 2.8.
      * TODO document used models
      */
     NEW_ACTIVITY_SUMMER_TIME_2_8(2801),

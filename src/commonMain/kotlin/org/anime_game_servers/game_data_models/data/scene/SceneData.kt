@@ -1,5 +1,6 @@
 package org.anime_game_servers.game_data_models.data.scene
 
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
@@ -16,6 +17,7 @@ import org.anime_game_servers.game_data_models.loader.FolderType
  */
 @DataFile("ExcelBinOutput/SceneExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
 @DataFile("txt/SceneData.txt", FileType.TSV, FolderType.EXCEL)
+@OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class SceneData(
     val id: Int,

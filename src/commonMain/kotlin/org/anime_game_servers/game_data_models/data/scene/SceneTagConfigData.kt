@@ -1,5 +1,6 @@
 package org.anime_game_servers.game_data_models.data.scene
 
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonNames
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
@@ -21,6 +22,7 @@ import org.anime_game_servers.game_data_models.loader.FolderType
  */
 @DataFile("ExcelBinOutput/SceneTagConfigData.json", FileType.JSON, FolderType.EXCEL)
 @DataFile("txt/SceneTagData.txt", FileType.TSV, FolderType.EXCEL)
+@OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class SceneTagConfigData(
     val id: Int,

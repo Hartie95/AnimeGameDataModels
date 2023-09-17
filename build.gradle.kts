@@ -1,8 +1,8 @@
 plugins {
-    kotlin("multiplatform") version "1.8.21"
-    kotlin("plugin.serialization") version "1.8.21"
+    kotlin("multiplatform") version "1.9.10"
+    kotlin("plugin.serialization") version "1.9.10"
     id("maven-publish")
-    id("org.jetbrains.dokka") version "1.8.10"
+    id("org.jetbrains.dokka") version "1.9.0"
 }
 
 group = "org.anime_game_servers"
@@ -42,8 +42,8 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
-                implementation("app.softwork:kotlinx-serialization-csv:0.0.13")
+                api("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+                api("app.softwork:kotlinx-serialization-csv:0.0.13")
             }
         }
         val commonTest by getting {

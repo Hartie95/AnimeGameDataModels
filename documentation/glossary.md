@@ -26,7 +26,7 @@ These are the in game events. Some notably exaples with their internal names are
 * Windblume (1.4) - `FleurFair`
 * Midsummer Island Adventure (1.6) - `SummerTime`
 
-For a full list check out the [ActivityType enum](/org/anime_game_servers/game_data_models/data/activity/ActivityType.kt).
+For a full list check out the [ActivityType enum](/src/commonMain/kotlin/org/anime_game_servers/game_data_models/data/activity/ActivityType.kt).
 
 ### Gadget
 These are a type of in game objects (like monsters or avatars). They are used for a lot of things, from inanimate objects like platforms, lasers, items,

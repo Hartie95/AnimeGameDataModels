@@ -30,12 +30,12 @@ import org.anime_game_servers.game_data_models.loader.FolderType
 data class ActivityShopSheetData(
     val id:Int,
     @JsonNames("is_ahead_preview")
-    val isAheadPreview: Boolean,
+    val isAheadPreview: Boolean? = null,
     @SerialName("condComb") @JsonNames("cond_comb")
     val condCombString: String? = null,
     @Transient
     val condComb: LogicType? = nullableEnumValueOfOrDefault(condCombString, LogicType.LOGIC_UNKNOWN),
-    val cond: List<ActivityShopSheetCond>,
+    val cond: List<ActivityShopSheetCond>? = null,
 
     // Text maps, client only
     val sheetNameTextMapHash: TextMapHash = UnsetTextMap

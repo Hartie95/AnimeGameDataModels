@@ -14,7 +14,7 @@ import org.anime_game_servers.game_data_models.loader.FolderType
  * @param monsterLevel the base level of monsters in his world
  */
 @DataFile("ExcelBinOutput/WorldLevelExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
-@DataFile("txt/WorldLevelData*.txt", FileType.TSV, FolderType.EXCEL)
+@DataFile("txt/WorldLevelData.txt", FileType.TSV, FolderType.EXCEL)
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class WorldLevelData(

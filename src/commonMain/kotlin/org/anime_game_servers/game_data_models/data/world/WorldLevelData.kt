@@ -1,4 +1,4 @@
-package org.anime_game_servers.game_data_models.data.scene
+package org.anime_game_servers.game_data_models.data.world
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable

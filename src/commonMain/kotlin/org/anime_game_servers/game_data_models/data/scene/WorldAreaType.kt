@@ -3,6 +3,9 @@ package org.anime_game_servers.game_data_models.data.scene
 import kotlinx.serialization.Serializable
 import org.anime_game_servers.game_data_models.data.interfaces.IntKey
 
+/**
+ * TODO find out what this used for
+ */
 @Serializable
 enum class WorldAreaType(val id: Int) : IntKey {
     LEVEL_NONE(0),

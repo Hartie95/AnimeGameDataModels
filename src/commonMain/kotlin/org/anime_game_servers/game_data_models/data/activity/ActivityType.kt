@@ -540,6 +540,54 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_EFFIGY_CHALLENGE_V2(3203),
 
     /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_BRICK_BREAKER(3300),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_COIN_COLLECT(3301),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_DUEL_HEART(3400),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_SEA_LAMP_3_4(3401),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_ELECTROHERCULES_BATTLE(3402),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_TEAM_CHAIN(3403),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_GCG_FESTIVAL(3404),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_SANDY_LAND_BANNER(3405),
+
+    /**
      * This is a placeholder used when the actual activity string can not be identified. Check [org.anime_game_servers.game_data_models.data.activity.ActivityData.activityTypeString] in this case.
      */
     NEW_ACTIVITY_UNKNOWN(999999);

@@ -32,11 +32,12 @@ junit = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
 
 ags-core-base = { module = "org.anime_game_servers.core:base", version.ref = "ags_core" }
 ags-core-gi = { module = "org.anime_game_servers.core:gi", version.ref = "ags_core" }
+ags-data-base = { module = "org.anime_game_servers.data_models:base", version.ref = "anime_game_data_models" }
 
 
 [bundles]
 common_models_serialization = ["kotlinx-serialization-json", "kotlinx-serialization-csv"]
-common_ags_gi = ["ags-core-base", "ags-core-gi"]
+common_ags_base = ["ags-core-base", "ags-data-base"]
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }

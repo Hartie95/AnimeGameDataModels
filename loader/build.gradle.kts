@@ -1,11 +1,9 @@
 plugins {
     kotlin("multiplatform")
-    alias(libs.plugins.kotlinx.serialization)
-    alias(libs.plugins.dokka)
 }
 
 group = "org.anime_game_servers.data_models"
-version = libs.versions.anime.game.data.models.get()
+version = "0.1"
 
 kotlin {
     jvm {
@@ -28,20 +26,17 @@ kotlin {
     linuxX64()
     linuxArm64()
 
-    
+
     sourceSets {
+        val korioVersion = "4.0.10"
         val commonMain by getting {
             dependencies {
                 api(libs.bundles.common.ags.base)
                 api(libs.bundles.common.models.serialization)
-                implementation(libs.ags.core.gi)
+                implementation("com.soywiz.korlibs.korio:korio:$korioVersion")
             }
         }
-        val commonTest by getting {
-            dependencies {
-                implementation(kotlin("test"))
-            }
-        }
+        val commonTest by getting
         val jvmMain by getting
         val jvmTest by getting
         val jsMain by getting

@@ -25,7 +25,7 @@ data class MainQuestData(
     val series: Int = -1,
     val chapterId: Int = -1,
     @JsonNames("taskType", "type")
-    val taskType: String? = null,
+    val taskType: String? = null, // TODO enum
 
 
     val luaPath: String? = null,

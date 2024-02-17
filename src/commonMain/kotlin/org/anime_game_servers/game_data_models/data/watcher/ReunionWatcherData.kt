@@ -33,6 +33,7 @@ data class ReunionWatcherData(
     val activateLevelRange: String? = null,
     val rewardId: Int = UnsetInt,
     val score: Int = UnsetInt,
+    @JsonNames("reward_unlock_day", "rewardUnlockDay")
     val daysForReward: Int = UnsetInt,
 
 

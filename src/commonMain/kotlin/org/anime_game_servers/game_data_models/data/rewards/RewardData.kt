@@ -15,8 +15,8 @@ import org.anime_game_servers.game_data_models.loader.FolderType
  * ExcelBinOutput/RewardExcelConfigData.json
  * txt/RewardData.txt (with an appropriate parser)
  * @property rewardId id of this object
- * @property hcoin amoung of hcoin (priogems) to reward
- * @property scoin amoung of scoin (mora) to reward
+ * @property hcoin amount of hcoin (primogems) to reward
+ * @property scoin amount of scoin (mora) to reward
  * @property playerExp amount of player/adventure rank exp to reward
  * @property rewardItemList list of items to reward
  * @property characterExp amount of character exp to reward

@@ -70,3 +70,7 @@ Every element inside a group also has a group unique id (cfgId), but they are no
 A group is always only part of one scene and one block, and depending on the type they can be found in the scripts folder under
 `scene/[sceneId]/scene[sceneId]_group[groupId].lua` or `activity/[activityId]/activity[activityId]_group[groupId].lua`.
 
+## Anime Game Currencies
+* Primogems (hcoin internally)
+* Genesis Crystals (mcoin internally)
+* Mora (scoin internally)

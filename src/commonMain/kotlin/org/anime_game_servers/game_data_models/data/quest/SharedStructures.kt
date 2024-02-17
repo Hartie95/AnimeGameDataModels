@@ -80,9 +80,12 @@ enum class QuestGuideType(val id: Int) : IntKey {
     override fun getIntKey() = id
 }
 
+@OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class GainItem (
+    @JsonNames("id")
     val itemId: Int = -1,
+    @JsonNames("itemCount")
     val count: Int = -1
 ) : IntKey{
     override fun getIntKey() = itemId

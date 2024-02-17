@@ -25,11 +25,11 @@ import org.anime_game_servers.game_data_models.loader.FolderType
 data class ActivityWatcherData(
     @JsonNames("id", "Id")
     override val id: Int,
-    @JsonNames("triggerConfig", "TriggerConfig")
+    @JsonNames("triggerConfig", "TriggerConfig", "trigger_config")
     override val triggerConfig: WatcherTriggerConfig? = null,
     @JsonNames("progress", "Progress")
     override val progress: Int = UnsetInt,
-    @JsonNames("isObsolete", "isDisuse")
+    @JsonNames("isObsolete", "isDisuse", "is_disuse")
     override val isObsolete: Boolean? = null,
 
     @JsonNames("rewardId", "RewardId")

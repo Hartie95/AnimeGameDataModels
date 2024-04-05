@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.item
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 enum class MaterialType(val id: Int) : IntKey {
     MATERIAL_NONE (0),

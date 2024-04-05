@@ -1,7 +1,7 @@
 package org.anime_game_servers.game_data_models.data.rewards
 
 import kotlinx.serialization.Serializable
-import org.anime_game_servers.game_data_models.data.interfaces.StringKey
+import org.anime_game_servers.core.base.interfaces.StringKey
 import org.anime_game_servers.game_data_models.loader.DataFile
 import org.anime_game_servers.game_data_models.loader.FileType
 import org.anime_game_servers.game_data_models.loader.FolderType

@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.helpers
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 import org.anime_game_servers.core.base.interfaces.IntValueEnum
 
 inline fun <reified T : Enum<T>> enumValueOfOrNull(name: String): T? =

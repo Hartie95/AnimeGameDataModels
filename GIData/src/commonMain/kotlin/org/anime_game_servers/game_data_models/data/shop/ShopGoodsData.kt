@@ -9,7 +9,7 @@ import org.anime_game_servers.game_data_models.data.general.ShopType
 import org.anime_game_servers.game_data_models.data.general.UnsetInt
 import org.anime_game_servers.game_data_models.data.general.UnsetLong
 import org.anime_game_servers.game_data_models.data.helpers.nullableEnumValueOfOrDefault
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 import org.anime_game_servers.game_data_models.data.quest.GainItem
 import org.anime_game_servers.game_data_models.loader.DataFile
 import org.anime_game_servers.game_data_models.loader.FileType

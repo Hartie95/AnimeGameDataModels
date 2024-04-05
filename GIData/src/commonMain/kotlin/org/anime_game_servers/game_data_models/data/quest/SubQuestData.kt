@@ -3,11 +3,11 @@ package org.anime_game_servers.game_data_models.data.quest
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
+import org.anime_game_servers.core.base.interfaces.IntKey
 import org.anime_game_servers.game_data_models.data.general.LogicType
 import org.anime_game_servers.game_data_models.data.general.TextMapHash
 import org.anime_game_servers.game_data_models.data.general.UnsetTextMap
 import org.anime_game_servers.game_data_models.data.helpers.nullableEnumValueOfOrDefault
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
 import org.anime_game_servers.game_data_models.loader.DataFile
 import org.anime_game_servers.game_data_models.loader.FileType
 import org.anime_game_servers.game_data_models.loader.FolderType

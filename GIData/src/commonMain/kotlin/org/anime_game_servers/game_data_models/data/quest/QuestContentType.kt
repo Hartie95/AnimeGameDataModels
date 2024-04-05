@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.quest
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 enum class QuestContentType(val id: Int) : IntKey {
     QUEST_CONTENT_NONE(0),

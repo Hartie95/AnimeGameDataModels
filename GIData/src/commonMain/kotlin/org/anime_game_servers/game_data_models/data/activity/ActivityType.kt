@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.activity
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 /**
  * Only one activity per type is allowed to be active at the same time

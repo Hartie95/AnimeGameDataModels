@@ -1,8 +1,8 @@
 package org.anime_game_servers.game_data_models.data.general
 
+import org.anime_game_servers.core.base.interfaces.IntKey
 import org.anime_game_servers.game_data_models.data.activity.ActivityShopOverallData
 import org.anime_game_servers.game_data_models.data.activity.ActivityType
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
 
 /**
  * These are the known shop types used in different shop definitions, including [ActivityShopOverallData], [ShopData] and more

@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.dungeon
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 enum class DungeonType(val id: Int) : IntKey {
     DUNGEON_NONE(0),

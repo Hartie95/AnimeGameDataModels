@@ -10,71 +10,14 @@ import korlibs.io.file.VfsFile
 import korlibs.io.file.baseName
 import korlibs.io.file.std.*
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.json.Json
 import kotlin.jvm.JvmOverloads
 
-@OptIn(ExperimentalSerializationApi::class)
 open class JsonDataLoader(val serializer: Json, val basePaths: Map<VfsFile, FolderType>) : DataLoader() {
-    /*@JvmOverloads
-    constructor(
-        ignoreUnknownKeys: Boolean = true, isLenient: Boolean = false
-    ) :
-            this(Json { this.ignoreUnknownKeys = ignoreUnknownKeys })*/
 
-    //constructor(serializer: Json, basePaths: Map<String, FolderType>) : this(serializer, basePaths.mapKeys { korlibs.io.file.std.applicationVfs[it.key] })
-
-    /*override fun <T> loadFolderObjectsMap(path: Path, deserializer: KSerializer<T>): Map<String, T> {
-        if (!fileSystem.exists(path)) {
-            throw IllegalArgumentException("File $path does not exist")
-        }
-        val files = fileSystem.listOrNull(path)
-        val map = mutableMapOf<String, T>()
-        if (files != null) {
-            for (file in files) {
-                fileSystem.read(file) {
-                    val obj = serializer.decodeFromBufferedSource(deserializer, this)
-                    map[file.name] = obj
-                }
-            }
-        }
-        return map
-    }*/
-
-    /**
-     * Throws:
-     * SerializationException - if the given JSON input cannot be deserialized to the value of type T.
-     * okio.IOException - If an I/O error occurs and source can't be read from.
-     * IllegalArgumentException - if the given path does not exist.
-     */
-    /*override fun <T> loadFolderObjectList(path: Path, deserializer: KSerializer<T>): List<T> {
-        if (!fileSystem.exists(path)) {
-            throw IllegalArgumentException("File $path does not exist")
-        }
-        val files = fileSystem.listOrNull(path)
-        val list = mutableListOf<T>()
-        if (files != null) {
-            for (file in files) {
-                fileSystem.read(file) {
-                    list += serializer.decodeFromBufferedSource(deserializer, this)
-                }
-            }
-        }
-        return list
-    }
-
-
-    override fun <T> loadFileObject(path: Path, deserializer: KSerializer<T>): T {
-        if (!fileSystem.exists(path)) {
-            throw IllegalArgumentException("File $path does not exist")
-        }
-        fileSystem.read(path) {
-            return serializer.decodeFromBufferedSource(deserializer, this)
-        }
-    }*/
     interface FileSource {
         suspend fun getFile(path: String): AGDMFile
         suspend fun exists(path: String): Boolean

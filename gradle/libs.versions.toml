@@ -1,14 +1,14 @@
 [versions]
 # https://kotlinlang.org/docs/releases.html#release-details
-kotlin = "1.9.22"
+kotlin = "1.9.21"
 # https://github.com/Kotlin/kotlinx-io/releases
 kx_io = "0.3.0"
 # https://github.com/Kotlin/kotlinx.serialization/releases
-kx_serialization = "1.6.3"
+kx_serialization = "1.6.2"
 # https://github.com/hfhbd/kotlinx-serialization-csv/releases
-kx_serialization_csv = "0.0.16"
+kx_serialization_csv = "0.0.15"
 # https://github.com/Kotlin/dokka/releases
-dokka = "1.9.10"
+dokka = "1.9.20"
 # https://github.com/oshai/kotlin-logging/releases
 logger = "6.0.3"
 

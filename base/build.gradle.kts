@@ -6,7 +6,6 @@ group = "org.anime_game_servers.data_models"
 version = "0.1"
 
 kotlin {
-    applyDefaultHierarchyTemplate()
     jvm {
         jvmToolchain(17)
         withJava()

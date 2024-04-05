@@ -6,8 +6,8 @@ group = "org.anime_game_servers.data_models"
 version = "0.1"
 
 kotlin {
+    jvmToolchain(17)
     jvm {
-        jvmToolchain(17)
         withJava()
         testRuns["test"].executionTask.configure {
             useJUnitPlatform()

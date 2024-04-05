@@ -8,12 +8,7 @@ group = "org.anime_game_servers.data_models"
 version = libs.versions.anime.game.data.models
 
 repositories {
-    mavenLocal()
     mavenCentral()
-    maven {
-        name = "ags-mvn-Releases"
-        url = uri("https://mvn.animegameservers.org/releases")
-    }
 }
 
 allprojects {

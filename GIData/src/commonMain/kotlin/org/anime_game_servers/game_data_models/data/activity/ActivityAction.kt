@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.activity
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 /**
  * This enum contains all action an ActivityCond can trigger. These can be triggered on valid or invalid conditions.

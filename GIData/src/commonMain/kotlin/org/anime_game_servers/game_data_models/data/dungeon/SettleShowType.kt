@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.dungeon
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 enum class SettleShowType(val id: Int) : IntKey {
     SETTLE_SHOW_NONE(0),

@@ -1,7 +1,7 @@
 package org.anime_game_servers.game_data_models.data.watcher
 
 import kotlinx.serialization.Serializable
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 /**
  * TODO document

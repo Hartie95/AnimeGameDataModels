@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.general
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 enum class LogicType(val id: Int) : IntKey {
     LOGIC_NONE(0),

@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.scene
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 enum class SceneMpType(val id: Int) : IntKey {
     SCENE_MP_NONE(0),

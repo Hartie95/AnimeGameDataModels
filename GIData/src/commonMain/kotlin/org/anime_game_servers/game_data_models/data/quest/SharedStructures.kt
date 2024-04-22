@@ -5,9 +5,9 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
 import kotlinx.serialization.json.JsonNames
+import org.anime_game_servers.core.base.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.StringKey
 import org.anime_game_servers.game_data_models.data.helpers.nullableEnumValueOfOrDefault
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
-import org.anime_game_servers.game_data_models.data.interfaces.StringKey
 
 @Serializable
 @OptIn(ExperimentalSerializationApi::class)

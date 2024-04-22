@@ -1,6 +1,6 @@
 package org.anime_game_servers.game_data_models.data.shop
 
-import org.anime_game_servers.game_data_models.data.interfaces.IntKey
+import org.anime_game_servers.core.base.interfaces.IntKey
 
 enum class ShopPrecondition(val id: Int) : IntKey {
     SHOP_PRECONDITION_NONE(0),

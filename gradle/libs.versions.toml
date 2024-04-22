@@ -1,17 +1,18 @@
 [versions]
 # https://kotlinlang.org/docs/releases.html#release-details
-kotlin = "1.9.22"
+kotlin = "1.9.21"
 # https://github.com/Kotlin/kotlinx-io/releases
 kx_io = "0.3.0"
+# https://github.com/Kotlin/kotlinx-io/releases
+kx_coroutines = "1.8.0"
 # https://github.com/Kotlin/kotlinx.serialization/releases
-kx_serialization = "1.6.3"
+kx_serialization = "1.6.2"
 # https://github.com/hfhbd/kotlinx-serialization-csv/releases
-kx_serialization_csv = "0.0.16"
+kx_serialization_csv = "0.0.15"
 # https://github.com/Kotlin/dokka/releases
-dokka = "1.9.10"
+dokka = "1.9.20"
 # https://github.com/oshai/kotlin-logging/releases
 logger = "6.0.3"
-
 ## testing libs
 # https://github.com/junit-team/junit5/releases
 junit = "5.10.1"
@@ -24,6 +25,7 @@ anime_game_data_models = "0.1"
 [libraries]
 kotlinx-io-core = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "kx_io" }
 jvm-kotlinx-io-core = { module = "org.jetbrains.kotlinx:kotlinx-io-core-jvm", version.ref = "kx_io" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kx_coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kx_serialization" }
 kotlinx-serialization-csv = { module = "app.softwork:kotlinx-serialization-csv", version.ref = "kx_serialization_csv" }
 logging = { module = "io.github.oshai:kotlin-logging", version.ref = "logger" }
@@ -32,11 +34,13 @@ junit = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
 
 ags-core-base = { module = "org.anime_game_servers.core:base", version.ref = "ags_core" }
 ags-core-gi = { module = "org.anime_game_servers.core:gi", version.ref = "ags_core" }
+ags-data-base = { module = "org.anime_game_servers.data_models:base", version.ref = "anime_game_data_models" }
 
 
 [bundles]
 common_models_serialization = ["kotlinx-serialization-json", "kotlinx-serialization-csv"]
-common_ags_gi = ["ags-core-base", "ags-core-gi"]
+common_ags_base = ["ags-core-base", "ags-data-base"]
+common_ktx = ["kotlinx-io-core", "kotlinx-coroutines-core"]
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }

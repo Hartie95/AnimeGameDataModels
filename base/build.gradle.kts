@@ -34,5 +34,8 @@ kotlin {
         val jvmTest by getting
         val jsMain by getting
         val jsTest by getting
+        val mingwX64Main by getting
+        val linuxX64Main by getting
+        val linuxArm64Main by getting
     }
 }

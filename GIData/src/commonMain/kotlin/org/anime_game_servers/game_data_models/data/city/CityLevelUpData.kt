@@ -28,6 +28,7 @@ data class CityLevelUpData(
     val cityId: Int,
     val level: Int,
     val consumeItem: GainItem? = null,
+    @JsonNames("rewardID")
     val rewardId: Int = UnsetInt,
     @JsonNames("actionVec")
     val actions: List<CityLevelUpAction>? = null,

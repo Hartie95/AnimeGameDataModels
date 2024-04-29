@@ -85,7 +85,7 @@ enum class QuestGuideType(val id: Int) : IntKey {
 data class GainItem (
     @JsonNames("id")
     val itemId: Int = -1,
-    @JsonNames("itemCount")
+    @JsonNames("itemCount", "itemNum")
     val count: Int = -1
 ) : IntKey{
     override fun getIntKey() = itemId

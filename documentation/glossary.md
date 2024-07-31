@@ -26,7 +26,7 @@ These are the in game events. Some notably exaples with their internal names are
 * Windblume (1.4) - `FleurFair`
 * Midsummer Island Adventure (1.6) - `SummerTime`
 
-For a full list check out the [ActivityType enum](/src/commonMain/kotlin/org/anime_game_servers/game_data_models/data/activity/ActivityType.kt).
+For a full list check out the [ActivityType enum](/GIData/src/commonMain/kotlin/org/anime_game_servers/game_data_models/data/activity/ActivityType.kt).
 
 ### Gadget
 These are a type of in game objects (like monsters or avatars). They are used for a lot of things, from inanimate objects like platforms, lasers, items,
@@ -43,10 +43,10 @@ This is the internal name for the teapot world, where the player can build their
 
 ### World
 A world is a users overall areas, which can be the main world, the teapot. A world can have multiple scenes active, especially while playing in co-op mode.
-The main scenes of a world are defined in [WorldData](/src/commonMain/kotlin/org/anime_game_servers/game_data_models/data/world/WorldData.kt).
+The main scenes of a world are defined in [WorldData](/GIData/src/commonMain/kotlin/org/anime_game_servers/game_data_models/data/world/WorldData.kt).
 
 ### Scene
-This can be seen as a full map area in the game, like the whole overworld, or a dungeons map. A scene is normally defined in [SceneData](/src/commonMain/kotlin/org/anime_game_servers/game_data_models/data/scene/SceneData.kt)
+This can be seen as a full map area in the game, like the whole overworld, or a dungeons map. A scene is normally defined in [SceneData](/GIData/src/commonMain/kotlin/org/anime_game_servers/game_data_models/data/scene/SceneData.kt)
 where information like the id and the level config are defined.
 
 Additionally, a scene can contain lua logic many SceneBlocks and SceneGroups that define interactive content, like monster spawn or puzzle logic in a scene.

@@ -48,6 +48,8 @@ enum class MaterialType(val id: Int) : IntKey {
     MATERIAL_GCG_CARD_BACK (44),
     MATERIAL_GCG_Field (45),
     MATERIAL_DESHRET_MANUAL (46),
+    MATERIAL_RENAME_ITEM (47),
+    MATERIAL_GCG_EXCHANGE_ITEM (48),
     MATERIAL_UNKNOWN(9999);
 
     override fun getIntKey() = id

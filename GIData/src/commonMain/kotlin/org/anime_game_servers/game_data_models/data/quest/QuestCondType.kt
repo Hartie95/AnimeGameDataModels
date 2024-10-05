@@ -470,6 +470,141 @@ enum class QuestCondType(val id: Int) : IntKey {
     QUEST_COND_PLAYER_ENTER_REGION(78),
 
     /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_SCHEDULE_OPEN_AND_COND(79),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ARANARA_COLLECTION_STATE_EQ(80),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_INFERENCE_FINISH_PAGE_CONCLUSION(81),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_SCENE_LEVEL_TAG_VALID(82),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_NEW_HOMEWORLD_WOOD_EXCHANGE_UNLOCK(83),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_IN_CITY(84),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_EXP_OVERFLOW(86),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_NPC_TYPE(87),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_NEW_FUNGUS_CAPTURE(88),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_LEVEL_REWARD_CAN_TAKE(89),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_SHOP_NEW_GOODS(90),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_CHALLENGE_NEW_BOSS(91),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_CHALLENGE_NEW_CHAR(92),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_LEVEL_UNLOCKED(93),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_WORLD_CHALLENGE_RESULT(94),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_HIT_WANDERER_RENAME_EASTER_EGG(95),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_HIT_KEYWORD_EASTER_EGG(96),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GCG_INVITE_TYPE(97),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_TMPVALUE_HIT_NICKNAME(98),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PACK_HAVE_ANY_ITEM(99),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_OFFERING_PARI_NEW(100),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_AKA_FES_REASONING_QUEST_NUM(101),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ(102),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_GCG_PVE_HARD_REFRESH(103),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_GCG_PVE_HARD_REWARD_CAN_TAKE(104),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_GCG_PVE_INFINITE_REFRESH(108),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_GCG_PVE_INFINITE_REWARD_CAN_TAKE(109),
+
+    /**
      * An unknown condition type, check the representation string to get the missing enum values name
      */
     QUEST_COND_UNKNOWN(9999);

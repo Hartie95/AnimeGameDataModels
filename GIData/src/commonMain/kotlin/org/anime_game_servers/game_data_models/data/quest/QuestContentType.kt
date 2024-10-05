@@ -425,6 +425,41 @@ enum class QuestContentType(val id: Int) : IntKey {
     QUEST_CONTENT_GADGET_STATE_CHANGE(155),
 
     /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_LEAVE_SCENE_RANGE_AND_ROOM(156),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_GCG_LEVEL_WIN(157),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_AVATAR_RENAME_COMPLETE(158),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_GCG_GUIDE_PROGRESS(159),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_QUEST_GLOBAL_VAR_EQUAL(160),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_QUEST_GLOBAL_VAR_GREATER(161),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_QUEST_GLOBAL_VAR_LESS(162),
+
+    /**
      * An unknown condition type, check the representation string to get the missing enum values name
      */
     QUEST_CONTENT_UNKNOWN(9999);

@@ -361,6 +361,66 @@ enum class QuestExecType(val id: Int) : IntKey {
     QUEST_EXEC_GRANT_TRIAL_AVATAR_BATCH_AND_LOCK_TEAM (70),
 
     /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_REFRESH_WORLD_QUEST_FLOW_GROUP_SUITE (71),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_HIDE_SCENE_POINT (72),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_UNHIDE_SCENE_POINT (73),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_REFRESH_WORLD_QUEST_FLOW_GROUP_SUITE_BUILTIN (74),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_RANDOM_CLOSED_QUEST_VAR (75),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_OPTIONAL_REVIVAL_TEAM (76),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_LOCK_AVATAR_TEAM_V2 (77),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_UNLOCK_AVATAR_TEAM_V2 (78),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_GRANT_TRIAL_AVATAR_BATCH_AND_LOCK_TEAM_V2 (79),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_GRANT_TRIAL_AVATAR_AND_LOCK_TEAM_V2 (80),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SET_IS_GAME_TIME_LOCKED_V2 (81),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_CLEAR_VEHICLE (82),
+
+    /**
      * An unknown condition type, check the representation string to get the missing enum values name
      */
     QUEST_EXEC_UNKNOWN (9999);

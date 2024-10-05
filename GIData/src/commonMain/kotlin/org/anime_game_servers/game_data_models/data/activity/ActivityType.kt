@@ -588,6 +588,84 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_SANDY_LAND_BANNER(3405),
 
     /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_FLEURFAIR_V2(3500),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_FUNGUS_FIGHTER_V2(3501),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_SANDWORM_CANNON(3600),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_AKA_FES(3601),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_SORUSH_TRIAL(3602),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_UGC_V2(3701),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_EFFIGY_CHALLENGE_V4(3702),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_JOURNEY(3703),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_GCG_PVE(3705),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_PENUMBRA_ADVENTURE(3800),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_MULTI_CHARACTER_FIGHT(3801),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_ANIMAL_VIEW(3802),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_GCG_PVE_INFINITE(3803),
+
+    /**
      * This is a placeholder used when the actual activity string can not be identified. Check [org.anime_game_servers.game_data_models.data.activity.ActivityData.activityTypeString] in this case.
      */
     NEW_ACTIVITY_UNKNOWN(999999);

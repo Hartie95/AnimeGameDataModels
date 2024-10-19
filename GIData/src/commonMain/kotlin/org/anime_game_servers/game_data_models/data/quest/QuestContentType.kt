@@ -458,6 +458,111 @@ enum class QuestContentType(val id: Int) : IntKey {
      * TODO document specifics
      */
     QUEST_CONTENT_QUEST_GLOBAL_VAR_LESS(162),
+    
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ACHIEVEMENT_ISACHIEVED (163),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_EVENTS_ITEM_STATUS (164),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ACHIEVEMENT_STATE_EQUAL (165),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_EXHIBITION_ACCUMULATE_GT_EQ (166),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_UNLOCK_ANY_TRANS_POINT (167),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ITEM_NUM_EQUAL (168),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ITEM_NUM_GREATER (169),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ITEM_NUM_LESS (170),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_QUEST_VAR_NOT_EQUAL (171),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_QUEST_GLOBAL_VAR_NOT_EQUAL (172),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_SHOP_SELL_OUT (173),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_QUEST_CHECK_EQUAL (174),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_QUEST_CHECK_VALUE (175),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_PRESENT_AT_SPECIFIC_SCENE (177),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_MISC_RENAME_COMPLETE (179),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ENTER_FEATURE_TAG_VEHICLE (180),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_LEAVE_FEATURE_TAG_VEHICLE (181),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_LEAVE_VEHICLE (182),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ABYSS_WAR_LEVEL_STATE_EQUAL (183),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ABYSS_WAR_ACCOUNT_DATA_IN_INTERVAL (184),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_CONTENT_ABYSS_WAR_LIMIT_REIGON_STATE_EQUAL (185),
 
     /**
      * An unknown condition type, check the representation string to get the missing enum values name

@@ -28,6 +28,10 @@ enum class ActivityShopSheetCondType(val id: Int) : IntKey {
      * param[0]: probably the phase it needs to be in
      */
     ACTIVITY_SHOP_SHEET_COND_SEA_LAMP_PHASE(3),
+    /**
+     * TODO
+     */
+    ACTIVITY_SHOP_SHEET_COND_ALCHEMY_SIM_PHASE(4),
 
     /**
      * This represents a condition that's not yet implemented, check the string representation for the actual value that's missing

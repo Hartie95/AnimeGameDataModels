@@ -605,6 +605,196 @@ enum class QuestCondType(val id: Int) : IntKey {
     QUEST_COND_ACTIVITY_GCG_PVE_INFINITE_REWARD_CAN_TAKE(109),
 
     /**
+     * TODO document specifics
+     */
+    QUEST_COND_STATE_INTERVAL (110),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_GCG_PVE_PUZZLE_REFRESH (111),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_GCG_PVE_PUZZLE_REWARD_CAN_TAKE (112),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACHIEVEMENT_STATE_EQUAL (113),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ITEM_NUM_EQUAL (114),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ITEM_NUM_GREATER (115),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ITEM_NUM_LESS (116),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_QUEST_VAR_NOT_EQUAL (117),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_QUEST_GLOBAL_VAR_NOT_EQUAL (118),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_QUEST_STATE_NOT_EQUAL (119),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_WEAPON_IS_ARKHE_OUSIA_OR_PNEUMA (120),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_BLESSING_V2_HAVE_REWARD (121),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_HOMEWORLD_COIN_REACH_MAXIMUM (122),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_QUEST_CHECK_RESULT (123),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_NPC_BORN (124),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_ALCHEMY_SIM_STATE (125),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_ALCHEMY_SIM_EXAM_CAN_SUBMIT (126),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ACTIVITY_ALCHEMY_SIM_LOCK_STAGE (127),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_FINISH_ROLE_COMBAT_ROUND (128),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_QUEST_CHECK_VALUE (129),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ROLE_COMBAT_NPC_RANDOM_VALUE (130),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_QUEST_CHECK_NOT_VALUE (131),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PRESENT_AT_SPECIFIC_SCENE (132),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PASS_ROLE_COMBAT_DIFFICULTY (133),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_IN_VEHICLE (134),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_TRIBAL_CHAPTER_UNLOCK (135),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PLAYER_LEAVE_REGION (137),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PLAYER_ENTER_CITY (138),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PLAYER_ENTER_FIRST_AREA (139),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PLAYER_ENTER_SECOND_AREA (140),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_IN_VEHICLE_BY_FEATURETAG (141),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_HAS_FINISH_MET_NPC (142),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PASS_ROLE_COMBAT_ROUND (143),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_PACK_HAVE_ITEM_WITH_ID (144),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ABYSS_WAR_LEVEL_STATE_EQUAL (145),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ABYSS_WAR_ACCOUNT_DATA_IN_INTERVAL (146),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_ROLE_COMBAT_HAS_DIFFICULTY_LEVEL (147),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_GROUP_GADGET_STATE_EQUALS (148),
+
+    /**
      * An unknown condition type, check the representation string to get the missing enum values name
      */
     QUEST_COND_UNKNOWN(9999);

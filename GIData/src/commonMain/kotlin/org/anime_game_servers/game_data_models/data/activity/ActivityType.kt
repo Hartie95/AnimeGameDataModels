@@ -666,6 +666,288 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_GCG_PVE_INFINITE(3803),
 
     /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_PHOTO_UNDERSEA(4000),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_TOY_BATTLE(4001),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_FONTAINE_GATHER(4002),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_GCG_PVE_PUZZLE(4003),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_COLLECT_UNDERWATER(4100),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_QUICK_TIME_COMBAT(4101),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_POETRY_FESTIVAL(4102),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_FISHBLASTER(4103),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_RAINBOW_PRINCE(4200),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_BLESSING_V2(4201),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_FUNGUS_FIGHTER_V3(4202),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_FILMFEST(4300),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_GOAL_CHALLENGE(4301),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_TREASURE_HUNT_V4(4302),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_FURNITURE_BROADCAST(4303),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_STAMINA_FIGHT(4401),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_LANTERN_RITE_V4(4402),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_LOST_SAMACHURL(4403),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_COOK_GAME(4404),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_CATCAFE(4501),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_ALCHEMY_SIM(4502),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_AUTO_TIME_STOP(4503),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_SLIME_CANNON(4504),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_EFFIGY_CHALLENGE_V5(4601),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_GREAT_FESTIVAL_V2(4602),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_HIDE_AND_SEEK_V4(4603),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_WATERGUN(4701),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_ACROBATICS_BATTLE(4702),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_MONSTER_VS_MONSTER(4703),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_ROLE_COMBAT_RESET(4704),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_BULLET_HELL(4705),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_BIRD_BALL(4801),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_FAIRY_TALES(4802),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_RECHARGE_DISK(4803),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_CHAR_MASTER_BROADCAST(4804),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_BOMBER_DODOCO(5001),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_GAIN_BUFF(5002),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_MAIN_LINE_BANNER(5003),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_QUICK_LAUNCH_BANNER(5004),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_NATLAN_TOUR(5005),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_BONUS_AVATAR_BANNER(5006),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_TRIBAL_PERSONAL_LINE_BANNER(5007),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_PERMANENT_BANNER(5008),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_COOPERATE_CHALLENGE(5101),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_ARENA_CHALLENGE_V5(5102),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_NAHIDA_BIRTH(5103),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_BOLTBUG_ABYSS(5104),
+
+    /**
      * This is a placeholder used when the actual activity string can not be identified. Check [org.anime_game_servers.game_data_models.data.activity.ActivityData.activityTypeString] in this case.
      */
     NEW_ACTIVITY_UNKNOWN(999999);

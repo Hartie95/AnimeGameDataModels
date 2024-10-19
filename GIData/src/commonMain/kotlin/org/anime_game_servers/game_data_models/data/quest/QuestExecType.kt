@@ -421,6 +421,156 @@ enum class QuestExecType(val id: Int) : IntKey {
     QUEST_EXEC_CLEAR_VEHICLE (82),
 
     /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SHOW_MAP_LAYER_GROUP (83),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SET_MAP_LAYER_UNLOCK_STATE (84),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_CLEAR_TEMPORARY_EVENTS_ITEM (85),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SET_IS_DIVEABLE (86),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_UNLOCK_EVENTS_ITEM (87),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_RESET_EXHIBITION (88),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_RESET_EVENTS_GIVING (89),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_LOCK_MIRROR_AVATAR_TEAM (92),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_UNLOCK_MIRROR_AVATAR_TEAM (93),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_ADD_ALCHEMY_SIM_CROP (94),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_CLEAR_QUEST_CHECK_DATA (95),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_INHERIT_FINISHED_PARENT_QUEST_SCENE_TEMP_RESOURCE (96),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SET_LIMIT_REGION_STATE (97),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_UNLOCK_PLAYER_ROOM_SCENE (98),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_LOCK_PLAYER_ROOM_SCENE (99),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_DEL_SCENE_TEMP_RES (100),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_ENTER_VEHICLE (101),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_EXIT_VEHICLE (102),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_CLEAR_FEATURE_TAG_VEHICLE (103),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_UNIQUE_RANDOM_QUEST_VAR (104),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SET_ABYSS_WAR_LEVEL_STATE (105),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SET_ABYSS_WAR_LIMIT_REGION_STATE (106),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SET_ABYSS_WAR_MIST_AREA (107),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_SET_ABYSS_WAR_ACCOUNT_DATA (108),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_FINISH_ABYSS_WAR_ACCOUNT_PERFORMANCE (109),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_CLEAR_ABYSS_WAR_DATA (110),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_BEGIN_ABYSS_WAR (111),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_BATCH_SET_QUEST_VAR (112),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_ACTIVATE_PERSISTENT_DUNGEON_SCENE (113),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_CLEAR_PERSISTENT_DUNGEON_SCENE (114),
+
+    /**
      * An unknown condition type, check the representation string to get the missing enum values name
      */
     QUEST_EXEC_UNKNOWN (9999);

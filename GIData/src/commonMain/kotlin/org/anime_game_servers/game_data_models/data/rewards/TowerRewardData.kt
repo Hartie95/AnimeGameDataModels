@@ -7,6 +7,7 @@ import org.anime_game_servers.core.base.interfaces.IntKey
 import org.anime_game_servers.game_data_models.loader.DataFile
 import org.anime_game_servers.game_data_models.loader.FileType
 import org.anime_game_servers.game_data_models.loader.FolderType
+import kotlin.jvm.JvmStatic
 
 /**
  * This Contains the reward references for different levels of success in the spiral abyss (tower)
@@ -39,5 +40,10 @@ data class TowerRewardData(
     @JsonNames("reward_id_room")
     val chamberRewards: List<Int>
 ) : IntKey {
-    override fun getIntKey() = (rewardGroup shl 8) + floor
+    override fun getIntKey() = getKey(rewardGroup, floor)
+
+    companion object {
+        @JvmStatic
+        fun getKey(rewardGroup: Int, floor: Int) = (rewardGroup shl 8) + floor
+    }
 }

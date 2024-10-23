@@ -17,6 +17,9 @@ enum class Element(val id:Int) : IntKey {
     Mushroom(11),
     Overdose(12),
     Wood(13),
+    LiquidPhlogiston(14),
+    SolidPhlogiston(15),
+    SolidifyPhlogiston(16),
     COUNT(14),
     DEFAULT(255);
 

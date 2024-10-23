@@ -35,6 +35,7 @@ kotlin {
                 api(libs.bundles.common.ags.base)
                 api(libs.bundles.common.models.serialization)
                 implementation(libs.ags.core.gi)
+                implementation(libs.bundles.common.crypto)
             }
         }
         val commonTest by getting {

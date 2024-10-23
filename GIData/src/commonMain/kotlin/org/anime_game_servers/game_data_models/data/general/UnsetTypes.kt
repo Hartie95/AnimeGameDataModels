@@ -4,3 +4,4 @@ const val UnsetInt = -1
 const val UnsetLong = -1L
 const val UnsetFloat = -1F
 const val UnsetTextMap = -1L
+const val UnsetTextHash = -1L

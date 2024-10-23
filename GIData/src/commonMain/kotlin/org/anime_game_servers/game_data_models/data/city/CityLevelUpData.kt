@@ -54,7 +54,7 @@ data class CityLevelUpData(
     )
 
     companion object {
-        @JvmStatic @JvmOverloads
+        @JvmStatic
         fun getKey(cityId: Int, level:Int) = (cityId shl 4) + level
     }
 

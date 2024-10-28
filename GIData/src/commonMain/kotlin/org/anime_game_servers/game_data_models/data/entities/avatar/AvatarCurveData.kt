@@ -1,4 +1,4 @@
-package org.anime_game_servers.game_data_models.data.entites.avatar
+package org.anime_game_servers.game_data_models.data.entities.avatar
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -1,4 +1,4 @@
-package org.anime_game_servers.game_data_models.data.entites
+package org.anime_game_servers.game_data_models.data.entities
 
 import org.anime_game_servers.game_data_models.data.general.TextHash
 import org.anime_game_servers.game_data_models.data.general.TextMapHash

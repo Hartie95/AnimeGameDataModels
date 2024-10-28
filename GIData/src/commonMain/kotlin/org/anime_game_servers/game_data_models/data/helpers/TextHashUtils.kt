@@ -14,7 +14,7 @@ fun getTextHash(textString: String): ULong {
     var result = 0UL
 
     hash.take(8).forEachIndexed { index, byte ->
-        result += ((byte.toLong() and 0xFF) shl (8 * index)).toULong()
+        result += ((byte.toULong() and 0xFFU) shl (8 * index))
     }
 
     return result

@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalSerializationApi::class)
 
-package org.anime_game_servers.game_data_models.data.entites
+package org.anime_game_servers.game_data_models.data.entities
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.JsonNames

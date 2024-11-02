@@ -7,5 +7,7 @@ package org.anime_game_servers.game_data_models.loader
  */
 enum class FileType {
     JSON,
-    TSV
+    TSV,
+    BLK,
+    OTHER,
 }

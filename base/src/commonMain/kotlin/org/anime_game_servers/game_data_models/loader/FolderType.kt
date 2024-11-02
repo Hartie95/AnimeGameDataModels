@@ -5,5 +5,7 @@ enum class FolderType {
     EXCEL,
     EXCEL_DEPRECATED,
     PATCH,
+    CUSTOM,
+    GENERATED,
     OTHER
 }

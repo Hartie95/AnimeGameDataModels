@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "org.anime_game_servers.data_models"
-version = "0.1"
+version = libs.versions.anime.game.data.models.get()
 
 kotlin {
     jvmToolchain(17)
@@ -22,14 +22,15 @@ kotlin {
             }
         }
     }
-    mingwX64()
-    linuxX64()
-    linuxArm64()
+    //mingwX64()
+    //linuxX64()
+    //linuxArm64()
 
 
     sourceSets {
         val commonMain by getting {
             dependencies {
+                api(project(":base"))
                 api(libs.bundles.common.ags.base)
                 api(libs.bundles.common.models.serialization)
                 api(libs.bundles.common.ktx)
@@ -40,8 +41,8 @@ kotlin {
         val jvmTest by getting
         val jsMain by getting
         val jsTest by getting
-        val mingwX64Main by getting
-        val linuxX64Main by getting
-        val linuxArm64Main by getting
+        //val mingwX64Main by getting
+        //val linuxX64Main by getting
+        //val linuxArm64Main by getting
     }
 }

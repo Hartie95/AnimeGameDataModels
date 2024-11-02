@@ -3,11 +3,11 @@ plugins {
 }
 
 group = "org.anime_game_servers.data_models"
-version = "0.1"
+version = libs.versions.anime.game.data.models.get()
 
 kotlin {
+    jvmToolchain(17)
     jvm {
-        jvmToolchain(17)
         withJava()
         testRuns["test"].executionTask.configure {
             useJUnitPlatform()
@@ -28,7 +28,11 @@ kotlin {
 
 
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                api(libs.bundles.common.models.serialization)
+            }
+        }
         val commonTest by getting
         val jvmMain by getting
         val jvmTest by getting

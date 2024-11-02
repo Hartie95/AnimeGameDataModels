@@ -9,6 +9,7 @@ version = libs.versions.anime.game.data.models
 
 repositories {
     mavenCentral()
+    google()
 }
 
 allprojects {

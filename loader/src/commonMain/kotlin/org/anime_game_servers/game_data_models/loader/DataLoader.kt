@@ -1,8 +1,17 @@
 package org.anime_game_servers.game_data_models.loader
 
-interface DataLoader {
 
-    //TODO find common api for handling multiple types of data
-    companion object {
-    }
+/**
+ * TODO add config for loading to allow patching/merging and prefer one source
+ * TODO add handling for wildcards in file paths
+ */
+interface DataLoader {
+    fun setParser(type: FileType, parser: DataParser)
+    fun addFolderTypeSource(folderType: FolderType, source: AGDMFile)
+    fun registerDataClassSource(source: DataClassSource)
+    fun unregisterDataClassSource(source: DataClassSource)
+
+    suspend fun <T> loadList(dataClassInfo: DataClassInfo<T>): List<T>?
+    suspend fun <T, K> loadMap(dataClassInfo: DataClassInfo<T>): Map<K, T>?
+    suspend fun <T> loadModel(dataClassInfo: DataClassInfo<T>): T?
 }

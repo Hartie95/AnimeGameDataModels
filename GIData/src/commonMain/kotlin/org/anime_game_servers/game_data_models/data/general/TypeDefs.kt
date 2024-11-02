@@ -9,4 +9,4 @@ typealias TextMapHash = Long
 /**
  * Hash of a text String. This can be recreated by hashing the string via [getTextHash].
  */
-typealias TextHash = Long
+typealias TextHash = ULong

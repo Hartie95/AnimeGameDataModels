@@ -239,4 +239,6 @@ data class AvatarData(
         val arith: ArithType? = nullableEnumValueOfOrDefault(arithString, ArithType.ARITH_UNKNOWN),
         val value: Float
     )
+
+    fun getCombatConfigHashJvm(): Long = combatConfigHash.toLong()
 }

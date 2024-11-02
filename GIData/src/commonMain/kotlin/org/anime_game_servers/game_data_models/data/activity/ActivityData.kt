@@ -21,6 +21,7 @@ import org.anime_game_servers.game_data_models.loader.FolderType
  */
 @DataFile("ExcelBinOutput/NewActivityExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
 @DataFile("txt/NewActivityData.txt", FileType.TSV, FolderType.EXCEL)
+@DataFile("Generated/NewActivityData.json", FileType.JSON, FolderType.GENERATED)
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class ActivityData(

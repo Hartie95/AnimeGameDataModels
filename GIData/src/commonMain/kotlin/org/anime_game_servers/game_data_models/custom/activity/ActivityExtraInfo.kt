@@ -24,7 +24,7 @@ import org.anime_game_servers.game_data_models.loader.FolderType
  * @property activeConditions list of conditions that must be met for the activity to be active and playable
  * @property comment additional comment about either the activity or the data in it, only relevant for the humans interacting with the data
  */
-@DataFile("Server/Activity/ActivityExtraInfo.json", FileType.JSON, FolderType.EXCEL)
+@DataFile("Server/ActivityExtraInfo.json", FileType.JSON, FolderType.CUSTOM)
 @Serializable
 data class ActivityExtraInfo(
     val activityId: Int,

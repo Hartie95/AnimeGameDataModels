@@ -15,6 +15,7 @@ import org.anime_game_servers.game_data_models.loader.FolderType
 @DataFile("ExcelBinOutput/MainQuestExcelConfigData.json", FileType.JSON, FolderType.EXCEL)
 @DataFile("BinOutput/Quest/*.json", FileType.JSON, FolderType.BINOUT)
 @DataFile("txt/MainQuestData*.txt", FileType.TSV, FolderType.EXCEL)
+@DataFile("Generated/Quest/*.json", FileType.JSON, FolderType.GENERATED)
 @OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class MainQuestData(

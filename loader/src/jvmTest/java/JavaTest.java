@@ -1,5 +1,5 @@
 import kotlinx.serialization.KSerializer;
-import org.anime_game_servers.game_data_models.data.quest.SubQuestData;
+import org.anime_game_servers.game_data_models.gi.data.quest.SubQuestData;
 import org.anime_game_servers.game_data_models.loader.JVMJsonDataLoader;
 
 import java.util.List;

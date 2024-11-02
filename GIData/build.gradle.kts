@@ -44,7 +44,7 @@ kotlin {
             ksp{
                 arg("type", "common")
                 arg("module", project.name)
-                arg("package_root", "$group.gi_data")
+                arg("package_root", "org.anime_game_servers.game_data_models.gi")
             }
         }
         val commonTest by getting {

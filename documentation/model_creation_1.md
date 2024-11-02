@@ -69,17 +69,17 @@ So we note us down that an alternative name for `monsterLevel` is `monster_level
 
 So lets move over to the data class for the library.
 
-First we create the representation as kotlin data class and name it `WorldLevelData`. In this example I created the file in the path "org/anime_game_servers/game_data_models/data/scene"
+First we create the representation as kotlin data class and name it `WorldLevelData`. In this example I created the file in the path "org/anime_game_servers/game_data_models/gi/data/scene"
 The resulting file should look something like this:
 ```kt
-package org.anime_game_servers.game_data_models.data.scene
+package org.anime_game_servers.game_data_models.gi.data.scene
 
 data class WorldLevelData() 
 ```
 
 Next we add the `@Serializable` annotation to the class. This annotation will tell the code, that this can be read and written to file format, giving us this:
 ```kt
-package org.anime_game_servers.game_data_models.data.scene
+package org.anime_game_servers.game_data_models.gi.data.scene
 
 import kotlinx.serialization.Serializable
 
@@ -89,7 +89,7 @@ data class WorldLevelData()
 
 With this very basic data class definition lets add the fields we need. Since both are simple whole numbers, lets use integers (`Int` in kotlin) for both.
 ```kt
-package org.anime_game_servers.game_data_models.data.scene
+package org.anime_game_servers.game_data_models.gi.data.scene
 
 import kotlinx.serialization.Serializable
 
@@ -103,7 +103,7 @@ data class WorldLevelData(
 Now we use `@JsonNames` to add the alternative name for `monsterLevel` when reading files. Since the features of specifying alternative names is marked as experimental, 
 we also need to add `@OptIn(ExperimentalSerializationApi::class)` to the class, which gives use this:
 ```kt
-package org.anime_game_servers.game_data_models.data.scene
+package org.anime_game_servers.game_data_models.gi.data.scene
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
@@ -121,7 +121,7 @@ data class WorldLevelData(
 Next we add the info that the main unique key to identify these objects is the `level` field. Since it's an integer, we add the `IntKey` interface to the class.
 Then we make int keys getIntKey function return the `level` field, which gives us this:
 ```kt 
-package org.anime_game_servers.game_data_models.data.scene
+package org.anime_game_servers.game_data_models.gi.data.scene
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
@@ -146,7 +146,7 @@ and the third one what type of resource it is.
 In this case we have two files, one json file (`ExcelBinOutput/WorldLevelExcelConfigData.json`) and one tsv file(`txt/WorldLevelData.txt`).
 Both of these are files in the anime games excel structure format, so we add two annotations, one for each file:
 ```kt 
-package org.anime_game_servers.game_data_models.data.scene
+package org.anime_game_servers.game_data_models.gi.data.scene
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
@@ -171,7 +171,7 @@ data class WorldLevelData(
 
 Finally, we add some documentation to the class, to describe what each field represents and what the whole object represents, which gives us the final result:
 ```kt
-package org.anime_game_servers.game_data_models.data.scene
+package org.anime_game_servers.game_data_models.gi.data.scene
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable

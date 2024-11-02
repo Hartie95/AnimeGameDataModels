@@ -38,7 +38,11 @@ kotlin {
         }
         val commonTest by getting
         val jvmMain by getting
-        val jvmTest by getting
+        val jvmTest by getting {
+            dependencies {
+                implementation(project(":GIData"))
+            }
+        }
         val jsMain by getting
         val jsTest by getting
         //val mingwX64Main by getting

@@ -1,7 +1,7 @@
 package utils
 
-import org.anime_game_servers.game_data_models.data.helpers.getPathHash
-import org.anime_game_servers.game_data_models.data.helpers.getTextHash
+import org.anime_game_servers.game_data_models.gi.helpers.getPathHash
+import org.anime_game_servers.game_data_models.gi.helpers.getTextHash
 import org.junit.jupiter.api.Test
 
 class TextHashUtilsTest {

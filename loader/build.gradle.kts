@@ -25,6 +25,10 @@ kotlin {
     //mingwX64()
     //linuxX64()
     //linuxArm64()
+    //macosArm64()
+    //macosX64()
+    //iosArm64()
+    //iosX64()
 
 
     sourceSets {
@@ -36,7 +40,11 @@ kotlin {
                 api(libs.bundles.common.ktx)
             }
         }
-        val commonTest by getting
+        val commonTest by getting {
+            dependencies {
+                implementation(kotlin("test"))
+            }
+        }
         val jvmMain by getting
         val jvmTest by getting {
             dependencies {

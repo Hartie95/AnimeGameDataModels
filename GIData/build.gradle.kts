@@ -28,6 +28,10 @@ kotlin {
     mingwX64()
     linuxX64()
     linuxArm64()
+    macosArm64()
+    macosX64()
+    iosArm64()
+    iosX64()
 
     
     sourceSets {
@@ -87,6 +91,18 @@ tasks{
         it.dependsOn("kspCommonMainKotlinMetadata")
     }
     getTasksByName("mingwX64SourcesJar", false).forEach {
+        it.dependsOn("kspCommonMainKotlinMetadata")
+    }
+    getTasksByName("macosArm64SourcesJar", false).forEach {
+        it.dependsOn("kspCommonMainKotlinMetadata")
+    }
+    getTasksByName("macosX64SourcesJar", false).forEach {
+        it.dependsOn("kspCommonMainKotlinMetadata")
+    }
+    getTasksByName("iosArm64SourcesJar", false).forEach {
+        it.dependsOn("kspCommonMainKotlinMetadata")
+    }
+    getTasksByName("iosX64SourcesJar", false).forEach {
         it.dependsOn("kspCommonMainKotlinMetadata")
     }
     withType<org.jetbrains.kotlin.gradle.dsl.KotlinCompile<*>> {

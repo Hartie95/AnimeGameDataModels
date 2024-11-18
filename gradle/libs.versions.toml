@@ -24,7 +24,7 @@ junit = "5.10.1"
 
 ## ags libs
 # https://github.com/Hartie95/Core
-ags_core = "0.1"
+ags_core = "0.2"
 anime_game_data_models = "0.2"
 
 [libraries]

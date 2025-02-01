@@ -571,6 +571,16 @@ enum class QuestExecType(val id: Int) : IntKey {
     QUEST_EXEC_CLEAR_PERSISTENT_DUNGEON_SCENE (114),
 
     /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_CREATE_VEHICLE (115),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_EXEC_ADD_ABYSS_WAR_ACCOUNT_DATA (116),
+
+    /**
      * An unknown condition type, check the representation string to get the missing enum values name
      */
     QUEST_EXEC_UNKNOWN (9999);

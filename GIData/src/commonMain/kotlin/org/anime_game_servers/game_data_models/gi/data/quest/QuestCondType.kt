@@ -286,7 +286,7 @@ enum class QuestCondType(val id: Int) : IntKey {
     /**
      * TODO document specifics
      */
-    QUEST_COND_QUEST_GLOBAL_VAR_GREATER(45),
+    QUEST_COND_QUEST_GLOBALv_VAR_GREATER(45),
 
     /**
      * TODO document specifics
@@ -797,6 +797,11 @@ enum class QuestCondType(val id: Int) : IntKey {
      * TODO document specifics
      */
     QUEST_COND_GROUP_GADGET_STATE_EQUALS (148),
+
+    /**
+     * TODO document specifics
+     */
+    QUEST_COND_INSTRUMENT_TRIAL (150),
 
     /**
      * An unknown condition type, check the representation string to get the missing enum values name

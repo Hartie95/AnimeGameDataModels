@@ -155,7 +155,7 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_SEA_LAMP_NEW(1302),
 
     /**
-     * This is the 1.4 "[Invitation of Windlbume](https://genshin-impact.fandom.com/wiki/Invitation_of_Windblume)" Event.
+     * This is the 1.4 "[Invitation of Windblume](https://genshin-impact.fandom.com/wiki/Invitation_of_Windblume)" Event.
      * This event also uses special activity groups in `Activity/2003/`
      * TODO document used models
      */
@@ -949,6 +949,54 @@ enum class ActivityType(val id: Int) : IntKey {
      * TODO document used models
      */
     NEW_ACTIVITY_BOLTBUG_ABYSS(5104),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_LIMITED_TIME_REWARD_AREA_BANNER(5105),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_GCG_AUTO_BATTLE_CARD(5201),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_MONSTER_CHESS(5202),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_CEREMONY(5203),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_LANTERN_RITE_V5(5204),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_ELECTROHERCULES_BATTLE_V3(5301),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_NATLAN_RACE(5302),
+
+    /**
+     * TODO identify this activity
+     * TODO document used models
+     */
+    NEW_ACTIVITY_MUSIC_GAME_BOOK_BANNER(5303),
 
     /**
      * This is a placeholder used when the actual activity string can not be identified. Check [ActivityData.activityTypeString] in this case.

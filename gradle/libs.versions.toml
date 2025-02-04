@@ -1,8 +1,8 @@
 [versions]
 # https://kotlinlang.org/docs/releases.html#release-details
-kotlin = "2.0.21"
+kotlin = "2.1.10"
 # https://github.com/google/ksp/releases
-ksp = "2.0.21-1.0.25"
+ksp = "2.1.10-1.0.29"
 # https://github.com/Kotlin/kotlinx-io/releases
 kx_io = "0.5.4"
 # https://github.com/Kotlin/kotlinx.coroutines/releases

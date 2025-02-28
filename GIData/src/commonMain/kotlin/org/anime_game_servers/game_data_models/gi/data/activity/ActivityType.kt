@@ -189,18 +189,20 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_SIGNIN_COMPANION(1404),
 
     /**
-     * This is the 1.4 "[Hangout Events Series I](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_I.png)" Overview.
-     * This is the 1.5 "[Hangout Events Series II](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_II.png)" Overview.
-     * This is the 2.2 "[Hangout Events Series III](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_III.png)" Overview.
-     * This is the 2.3 "[Hangout Events Series IV](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_IV.png)" Overview.
-     * This is the 2.4 "[Hangout Events Series V](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_V.png)" Overview.
-     * This is the 2.7 "[Hangout Events Series VI](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_VI.png)" Overview.
-     * This is the 2.8 "[Hangout Events Series VII](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_VII.png)" Overview.
-     * This is likely the 3.5 "[Hangout Events Series VIII](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_VIII.png)" Overview.
-     * This is likely the 3.6 "[Hangout Events Series IX](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_IX.png)" Overview.
-     * This is likely the 3.7 "[Hangout Events Series X](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_X.png)" Overview.
-     * This is likely the 3.8 "[Hangout Events Series XI](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_XI.png)" Overview.
-     * This is likely the 4.5 "[Hangout Events Series XII](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_XII.png)" Overview.
+     * This is an announcement activity/event to inform the user about new [Handout Events](https://genshin-impact.fandom.com/wiki/Hangout_Event), and was first used in 1.4.
+Known occurrences include:
+     * [1.4 Hangout Events Series I](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_I.png),
+[1.5 Hangout Events Series II](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_II.png),
+[2.2 Hangout Events Series III](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_III.png),
+[2.3 Hangout Events Series IV](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_IV.png),
+[2.4 Hangout Events Series V](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_V.png),
+[2.7 Hangout Events Series VI](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_VI.png),
+[2.8 Hangout Events Series VII](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_VII.png),
+[3.5 Hangout Events Series VIII](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_VIII.png),
+[3.6 Hangout Events Series IX](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_IX.png),
+[3.7 Hangout Events Series X](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_X.png),
+[3.8 Hangout Events Series XI](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_XI.png),
+[4.5 Hangout Events Series XII](https://genshin-impact.fandom.com/wiki/Hangout_Event?file=Hangout_Events_Series_XII.png)
      * TODO document used models
      */
     NEW_ACTIVITY_COOP(1405),
@@ -285,7 +287,7 @@ enum class ActivityType(val id: Int) : IntKey {
 
     /**
      * This is might be the "[Legend of the Vagabond Sword](https://genshin-impact.fandom.com/wiki/Legend_of_the_Vagabond_Sword)" Event from version 1.6.
-     * This seems to be the 1.6 announcement for "[Autumn Winds, Scarlet Leaves](https://genshin-impact.fandom.com/wiki/Autumn_Winds,_Scarlet_Leaves?file=Autumn_Winds%2C_Scarlet_Leaves_Event_Page.png)"
+     * This is might be the 1.6 announcement for "[Autumn Winds, Scarlet Leaves](https://genshin-impact.fandom.com/wiki/Autumn_Winds,_Scarlet_Leaves?file=Autumn_Winds%2C_Scarlet_Leaves_Event_Page.png)"
      * TODO verify this. Where did Legend of the Vagabond Sword go?
      * TODO document used models
      */
@@ -335,7 +337,7 @@ enum class ActivityType(val id: Int) : IntKey {
     NEW_ACTIVITY_LUNA_RITE(2101),
 
     /**
-     * this is the 2.1/2.5/3.1 [Hyakunin Ikki](https://genshin-impact.fandom.com/wiki/Hyakunin_Ikki)" event
+     * This is the 2.1/2.5/3.1 [Hyakunin Ikki](https://genshin-impact.fandom.com/wiki/Hyakunin_Ikki)" event
      * TODO document used models
      */
     NEW_ACTIVITY_SUMO(2102),
@@ -352,7 +354,7 @@ enum class ActivityType(val id: Int) : IntKey {
      */
     NEW_ACTIVITY_MONSTER_BANNER_EFFIGY_WATER(2104),
 
-    /**a
+    /**
      * This is the 2.1 "[Distant Storm](https://genshin-impact.fandom.com/wiki/Thunder_Manifestation#Distant_Storm)" boss announcement banner
      * TODO document used models
      */
@@ -445,15 +447,15 @@ enum class ActivityType(val id: Int) : IntKey {
 
     /**
      * This is the 2.6 "[Vibro-Crystal Research](https://genshin-impact.fandom.com/wiki/Vibro-Crystal/2022-04-21)" event
-     * This is likely the 3.5 "[Vibro-Crystal Verification](https://genshin-impact.fandom.com/wiki/Vibro-Crystal/2023-03-14)" event
-     * This is likely the 4.6 "[Vibro-Crystal Applications](https://genshin-impact.fandom.com/wiki/Vibro-Crystal/2024-04-28)" event
+     * This is the 3.5 "[Vibro-Crystal Verification](https://genshin-impact.fandom.com/wiki/Vibro-Crystal/2023-03-14)" event
+     * This is the 4.6 "[Vibro-Crystal Applications](https://genshin-impact.fandom.com/wiki/Vibro-Crystal/2024-04-28)" event
      * TODO document used models
      */
     NEW_ACTIVITY_CRYSTAL_LINK(2601),
 
     /**
      * This is the 2.6 "[Spices From the West](https://genshin-impact.fandom.com/wiki/Spices_From_the_West/2022-05-14)" event
-     * This is likely the 3.5 "[Spices From the West: Northerly Search](https://genshin-impact.fandom.com/wiki/Spices_From_the_West/2023-03-31)" event
+     * This is the 3.5 "[Spices From the West: Northerly Search](https://genshin-impact.fandom.com/wiki/Spices_From_the_West/2023-03-31)" event
      * TODO document used models
      */
     NEW_ACTIVITY_SPICE(2602),
@@ -461,7 +463,8 @@ enum class ActivityType(val id: Int) : IntKey {
     /**
      * This is the 2.6 "[Outside the Canvas, Inside the Lens](https://genshin-impact.fandom.com/wiki/Outside_the_Canvas,_Inside_the_Lens/2022-04-01)" event
      * This is the 3.2 "[Outside the Canvas, Inside the Lens: Greenery Chapter](https://genshin-impact.fandom.com/wiki/Outside_the_Canvas,_Inside_the_Lens/2022-11-16)" event
-     * This is likely the 4.8 "[Outside the Canvas, Inside the Lens: Dew-Kissed Chapter](https://genshin-impact.fandom.com/wiki/Outside_the_Canvas,_Inside_the_Lens/2024-07-29)" event
+     * This is the 4.8 "[Outside the Canvas, Inside the Lens: Dew-Kissed Chapter](https://genshin-impact.fandom.com/wiki/Outside_the_Canvas,_Inside_the_Lens/2024-07-29)" event
+     * This is the 5.0 "[Mementos of Teyvat](https://genshin-impact.fandom.com/wiki/Mementos_of_Teyvat)" event
      * TODO document used models
      */
     NEW_ACTIVITY_PHOTO(2603),

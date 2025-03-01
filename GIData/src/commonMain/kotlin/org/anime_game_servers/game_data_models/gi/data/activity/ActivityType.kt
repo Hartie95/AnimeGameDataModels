@@ -214,7 +214,9 @@ Known occurrences include:
     NEW_ACTIVITY_MONSTER_BANNER_DRAKE_PRIMO_ROCK(1501),
 
     /**
-     * This is the "[Energy Amplifier](https://genshin-impact.fandom.com/wiki/Energy_Amplifier)" Event, which first occurred during version 1.5
+     * This is the 1.5 "[Energy Amplifier](https://genshin-impact.fandom.com/wiki/Energy_Amplifier)" event
+     * This is the 2.3 "[Energy Amplifier Fruition](https://genshin-impact.fandom.com/wiki/Energy_Amplifier/2021-12-24)" event
+     * for Energy Amplifier: Lemma, see NEW_ACTIVITY_RECHARGE_DISK
      * TODO document used models
      */
     NEW_ACTIVITY_CHANNELER_SLAB(1502),
@@ -519,6 +521,8 @@ Known occurrences include:
 
     /**
      * This is the 3.0 "[Fayz Trials](https://genshin-impact.fandom.com/wiki/Fayz_Trials/2022-09-08)" event
+     * This is the 3.7 "[Fayz Trials: Hypothesis](https://genshin-impact.fandom.com/wiki/Fayz_Trials/2023-06-21)" event
+     * For the The Great Fayz Reaction Debate, see NEW_ACTIVITY_AUTO_TIME_STOP
      * TODO document used models
      */
     NEW_ACTIVITY_MUQADAS_POTION(3002),
@@ -567,97 +571,99 @@ Known occurrences include:
     NEW_ACTIVITY_EFFIGY_CHALLENGE_V2(3203),
 
     /**
-     * TODO identify this activity
+     * This is the 3.3 "[Akitsu Kimodameshi](https://genshin-impact.fandom.com/wiki/Akitsu_Kimodameshi)" event
      * TODO document used models
      */
     NEW_ACTIVITY_BRICK_BREAKER(3300),
 
     /**
-     * TODO identify this activity
+     * this is maybe the 3.3 "[Across the Wilderness](https://genshin-impact.fandom.com/wiki/Across_the_Wilderness)" event
+     * TODO verify this.
      * TODO document used models
      */
     NEW_ACTIVITY_COIN_COLLECT(3301),
 
     /**
-     * TODO identify this activity
+     * This is the 3.4 "[Warrior's Spirit](https://genshin-impact.fandom.com/wiki/Warrior%27s_Spirit)" event
      * TODO document used models
      */
     NEW_ACTIVITY_DUEL_HEART(3400),
 
     /**
-     * TODO identify this activity
+     * This is the 3.4 "[The Exquisite Night Chimes](https://genshin-impact.fandom.com/wiki/The_Exquisite_Night_Chimes)" event
      * TODO document used models
      */
     NEW_ACTIVITY_SEA_LAMP_3_4(3401),
 
     /**
-     * TODO identify this activity
+     * This is the 3.4 "[Almighty Arataki Extraordinary and Exhilarating Extreme Beetle Brawl](https://genshin-impact.fandom.com/wiki/Almighty_Arataki_Extraordinary_and_Exhilarating_Extreme_Beetle_Brawl)" event
      * TODO document used models
      */
     NEW_ACTIVITY_ELECTROHERCULES_BATTLE(3402),
 
     /**
-     * TODO identify this activity
+     * This is the 3.4 "[Second Blooming](https://genshin-impact.fandom.com/wiki/Second_Blooming](https://genshin-impact.fandom.com/wiki/Second_Blooming)" event
      * TODO document used models
      */
     NEW_ACTIVITY_TEAM_CHAIN(3403),
 
     /**
-     * TODO identify this activity
+     * This is maybe the 3.4 "[Heated Battle Mode: Omnipotent Guide](https://genshin-impact.fandom.com/wiki/Heated_Battle_Mode/2023-01-28)
+     * As of 5.3, this banner shows [Heated Battle Mode: Sprinting Stratagems](https://genshin-impact.fandom.com/wiki/Heated_Battle_Mode/2024-01-06) instead of the expected "Omnipotent Guide"
      * TODO document used models
      */
     NEW_ACTIVITY_GCG_FESTIVAL(3404),
 
     /**
-     * TODO identify this activity
+     * This is the 3.4 "[Desert of Hadramaveth](https://genshin-impact.fandom.com/wiki/Desert_of_Hadramaveth?file=Desert_of_Hadramaveth_Event_Menu.png)" location announcement
      * TODO document used models
      */
     NEW_ACTIVITY_SANDY_LAND_BANNER(3405),
 
     /**
-     * TODO identify this activity
+     * This is the 3.5 "[Windblume's Breath](https://genshin-impact.fandom.com/wiki/Windblume%27s_Breath)" event
      * TODO document used models
      */
     NEW_ACTIVITY_FLEURFAIR_V2(3500),
 
     /**
-     * TODO identify this activity
+     * This is the 3.5 "[Fungus Mechanicus](https://genshin-impact.fandom.com/wiki/Fungus_Mechanicus)" event
      * TODO document used models
      */
     NEW_ACTIVITY_FUNGUS_FIGHTER_V2(3501),
 
     /**
-     * TODO identify this activity
+     * This is the 3.6 "[Fulminating Sandstorm](https://genshin-impact.fandom.com/wiki/Fulminating_Sandstorm)" event
      * TODO document used models
      */
     NEW_ACTIVITY_SANDWORM_CANNON(3600),
 
     /**
-     * TODO identify this activity
+     * This is the 3.6 "[A Parade of Providence](https://genshin-impact.fandom.com/wiki/A_Parade_of_Providence)" event
      * TODO document used models
      */
     NEW_ACTIVITY_AKA_FES(3601),
 
     /**
-     * TODO identify this activity
+     * This is the 3.6 "[The Recollector's Path](https://genshin-impact.fandom.com/wiki/The_Recollector%27s_Path)" event
      * TODO document used models
      */
     NEW_ACTIVITY_SORUSH_TRIAL(3602),
 
     /**
-     * TODO identify this activity
+     * This is the 3.7 "[Divine Ingenuity: Collector's Chapter](https://genshin-impact.fandom.com/wiki/Divine_Ingenuity/2023-06-08)" event
      * TODO document used models
      */
     NEW_ACTIVITY_UGC_V2(3701),
 
     /**
-     * TODO identify this activity
+     * This is the 3.7 "[Feast of the Departed Warriors](https://genshin-impact.fandom.com/wiki/Feast_of_the_Departed_Warriors)" event
      * TODO document used models
      */
     NEW_ACTIVITY_EFFIGY_CHALLENGE_V4(3702),
 
     /**
-     * TODO identify this activity
+     * This is the 3.7 "[Duel! The Summoners' Summit!](https://genshin-impact.fandom.com/wiki/Duel!_The_Summoners%27_Summit!)" event
      * TODO document used models
      */
     NEW_ACTIVITY_JOURNEY(3703),
@@ -669,19 +675,20 @@ Known occurrences include:
     NEW_ACTIVITY_GCG_PVE(3705),
 
     /**
-     * TODO identify this activity
+     * This is the 3.8 "[Secret Summer Paradise](https://genshin-impact.fandom.com/wiki/Secret_Summer_Paradise)" event
      * TODO document used models
      */
     NEW_ACTIVITY_PENUMBRA_ADVENTURE(3800),
 
     /**
-     * TODO identify this activity
+     * This is the 3.8 "[Perilous Expedition](https://genshin-impact.fandom.com/wiki/Perilous_Expedition)" event
      * TODO document used models
      */
     NEW_ACTIVITY_MULTI_CHARACTER_FIGHT(3801),
 
     /**
-     * TODO identify this activity
+     * This is the 3.8 "[Shared Sight](https://genshin-impact.fandom.com/wiki/Shared_Sight)" event
+     * This is the 5.2 "[Claw Convoy](https://genshin-impact.fandom.com/wiki/Claw_Convoy)" event
      * TODO document used models
      */
     NEW_ACTIVITY_ANIMAL_VIEW(3802),
@@ -693,19 +700,19 @@ Known occurrences include:
     NEW_ACTIVITY_GCG_PVE_INFINITE(3803),
 
     /**
-     * TODO identify this activity
+     * This is the 4.0 "[Studies in Light and Shadow: A Fontaine of Enchantment](https://genshin-impact.fandom.com/wiki/Studies_in_Light_and_Shadow:_A_Fontaine_of_Enchantment)" event
      * TODO document used models
      */
     NEW_ACTIVITY_PHOTO_UNDERSEA(4000),
 
     /**
-     * TODO identify this activity
+     * This is the 4.0 "[Mega Meka Melee](https://genshin-impact.fandom.com/wiki/Mega_Meka_Melee)" event
      * TODO document used models
      */
     NEW_ACTIVITY_TOY_BATTLE(4001),
 
     /**
-     * TODO identify this activity
+     * This is the 4.0 "[Relic Records: Creations of the Hydro Nation](https://genshin-impact.fandom.com/wiki/Relic_Records:_Creations_of_the_Hydro_Nation)" event
      * TODO document used models
      */
     NEW_ACTIVITY_FONTAINE_GATHER(4002),
@@ -717,19 +724,19 @@ Known occurrences include:
     NEW_ACTIVITY_GCG_PVE_PUZZLE(4003),
 
     /**
-     * TODO identify this activity
+     * This is the 4.1 "[Radiant Harvest](https://genshin-impact.fandom.com/wiki/Radiant_Harvest): event
      * TODO document used models
      */
     NEW_ACTIVITY_COLLECT_UNDERWATER(4100),
 
     /**
-     * TODO identify this activity
+     * This is the 4.1 "[The Peaks and Troughs of Life](https://genshin-impact.fandom.com/wiki/The_Peaks_and_Troughs_of_Life)" event
      * TODO document used models
      */
     NEW_ACTIVITY_QUICK_TIME_COMBAT(4101),
 
     /**
-     * TODO identify this activity
+     * This is the 4.1 "[Waterborne Poetry](https://genshin-impact.fandom.com/wiki/Waterborne_Poetry)" event
      * TODO document used models
      */
     NEW_ACTIVITY_POETRY_FESTIVAL(4102),
@@ -741,31 +748,31 @@ Known occurrences include:
     NEW_ACTIVITY_FISHBLASTER(4103),
 
     /**
-     * TODO identify this activity
+     * This is the 4.2 "[Thelxie's Fantastic Adventures](https://genshin-impact.fandom.com/wiki/Thelxie%27s_Fantastic_Adventures)" event
      * TODO document used models
      */
     NEW_ACTIVITY_RAINBOW_PRINCE(4200),
 
     /**
-     * TODO identify this activity
+     * This is the 4.2 "[Graph Adversarial Technology Experiment Log](https://genshin-impact.fandom.com/wiki/Graph_Adversarial_Technology_Experiment_Log)" event
      * TODO document used models
      */
     NEW_ACTIVITY_BLESSING_V2(4201),
 
     /**
-     * TODO identify this activity
+     * This is the 4.2 "[Lil' Fungi's Fun-Tastic Fiesta](https://genshin-impact.fandom.com/wiki/Lil%27_Fungi%27s_Fun-Tastic_Fiesta)" event
      * TODO document used models
      */
     NEW_ACTIVITY_FUNGUS_FIGHTER_V3(4202),
 
     /**
-     * TODO identify this activity
+     * This is the 4.3 "[Roses and Muskets](https://genshin-impact.fandom.com/wiki/Roses_and_Muskets) event
      * TODO document used models
      */
     NEW_ACTIVITY_FILMFEST(4300),
 
     /**
-     * TODO identify this activity
+     * This is the 4.3 "[Dance of Resolute Will](https://genshin-impact.fandom.com/wiki/Dance_of_Resolute_Will)" event
      * TODO document used models
      */
     NEW_ACTIVITY_GOAL_CHALLENGE(4301),
@@ -777,13 +784,13 @@ Known occurrences include:
     NEW_ACTIVITY_TREASURE_HUNT_V4(4302),
 
     /**
-     * TODO identify this activity
+     * This is the 4.3 "[Gazing Up at Eternity, Looking Down at the World](https://genshin-impact.fandom.com/wiki/Gazing_Up_at_Eternity,_Looking_Down_at_the_World)" event
      * TODO document used models
      */
     NEW_ACTIVITY_FURNITURE_BROADCAST(4303),
 
     /**
-     * TODO identify this activity
+     * This is the 4.4 "[Triumphant Frenzy](https://genshin-impact.fandom.com/wiki/Triumphant_Frenzy)" event
      * TODO document used models
      */
     NEW_ACTIVITY_STAMINA_FIGHT(4401),
@@ -795,43 +802,45 @@ Known occurrences include:
     NEW_ACTIVITY_LANTERN_RITE_V4(4402),
 
     /**
-     * TODO identify this activity
+     * This is the 4.4 "[Journey Through Hilinigmatic Terrain](https://genshin-impact.fandom.com/wiki/Journey_Through_Hilinigmatic_Terrain)" event
      * TODO document used models
      */
     NEW_ACTIVITY_LOST_SAMACHURL(4403),
 
     /**
-     * TODO identify this activity
+     * This is the 4.4 "[Receiver of Friends From Afar](https://genshin-impact.fandom.com/wiki/Receiver_of_Friends_From_Afar)" event
      * TODO document used models
      */
     NEW_ACTIVITY_COOK_GAME(4404),
 
     /**
-     * TODO identify this activity
+     * This is the 4.5 "[Feline Fortress Furrdyssey](https://genshin-impact.fandom.com/wiki/Feline_Fortress_Furrdyssey)" event
      * TODO document used models
      */
     NEW_ACTIVITY_CATCAFE(4501),
 
     /**
-     * TODO identify this activity
+     * This is the 4.5 "[Alchemical Ascension](https://genshin-impact.fandom.com/wiki/Alchemical_Ascension)" event
      * TODO document used models
      */
     NEW_ACTIVITY_ALCHEMY_SIM(4502),
 
     /**
-     * TODO identify this activity
+     * This is the 4.5 "[The Great Fayz Reaction Debate](https://genshin-impact.fandom.com/wiki/Fayz_Trials/2024-03-22)" event
+     * For other Fayz Trials, see NEW_ACTIVITY_MUQADAS_POTION
      * TODO document used models
      */
     NEW_ACTIVITY_AUTO_TIME_STOP(4503),
 
     /**
-     * TODO identify this activity
+     * This is the 4.5 "[Rolling Crossfire](https://genshin-impact.fandom.com/wiki/Rolling_Crossfire)" event
      * TODO document used models
      */
     NEW_ACTIVITY_SLIME_CANNON(4504),
 
     /**
-     * TODO identify this activity
+     * This is the 4.6 "[Specially-Shaped Saurian Search](https://genshin-impact.fandom.com/wiki/Specially-Shaped_Saurian_Search)" event
+     * This is the 5.3 "[On the Trail of Behemoths](https://genshin-impact.fandom.com/wiki/On_the_Trail_of_Behemoths)" event
      * TODO document used models
      */
     NEW_ACTIVITY_EFFIGY_CHALLENGE_V5(4601),
@@ -843,43 +852,43 @@ Known occurrences include:
     NEW_ACTIVITY_GREAT_FESTIVAL_V2(4602),
 
     /**
-     * TODO identify this activity
+     * This is the 4.6 "[Windtrace: Seekers and Strategy](https://genshin-impact.fandom.com/wiki/Windtrace/2024-05-14)" event
      * TODO document used models
      */
     NEW_ACTIVITY_HIDE_AND_SEEK_V4(4603),
 
     /**
-     * TODO identify this activity
+     * This is the 4.7 "[Spino Doubleblaster](https://genshin-impact.fandom.com/wiki/Spino_Doubleblaster)" event
      * TODO document used models
      */
     NEW_ACTIVITY_WATERGUN(4701),
 
     /**
-     * TODO identify this activity
+     * This is the 4.7 "[Endless Forms Most Martial](https://genshin-impact.fandom.com/wiki/Endless_Forms_Most_Martial)" event
      * TODO document used models
      */
     NEW_ACTIVITY_ACROBATICS_BATTLE(4702),
 
     /**
-     * TODO identify this activity
+     * This is the 4.7 "[Mutual Security Enhancing Simulation](https://genshin-impact.fandom.com/wiki/Mutual_Security_Enhancing_Simulation)" event
      * TODO document used models
      */
     NEW_ACTIVITY_MONSTER_VS_MONSTER(4703),
 
     /**
-     * TODO identify this activity
+     * TODO identify this activity, it doesn't have an entry in NewActivityExcelConfigData
      * TODO document used models
      */
     NEW_ACTIVITY_ROLE_COMBAT_RESET(4704),
 
     /**
-     * TODO identify this activity
+     * This is the 4.7 "[Record of Reflective Writing](https://genshin-impact.fandom.com/wiki/Record_of_Reflective_Writing)" event
      * TODO document used models
      */
     NEW_ACTIVITY_BULLET_HELL(4705),
 
     /**
-     * TODO identify this activity
+     * This is the 4.8 "[Bing-Bang Finchball 2024-08-06](https://genshin-impact.fandom.com/wiki/Bing-Bang_Finchball/2024-08-06)" event
      * TODO document used models
      */
     NEW_ACTIVITY_BIRD_BALL(4801),
@@ -891,109 +900,117 @@ Known occurrences include:
     NEW_ACTIVITY_FAIRY_TALES(4802),
 
     /**
-     * TODO identify this activity
+     * This is the 4.8 "[Energy Amplifier: Lemma](https://genshin-impact.fandom.com/wiki/Energy_Amplifier/2024-08-12)" event
+     * For previous Energy Amplifier events, see NEW_ACTIVITY_CHANNELER_SLAB
      * TODO document used models
      */
     NEW_ACTIVITY_RECHARGE_DISK(4803),
 
     /**
-     * TODO identify this activity
+     * This is the 4.8 "[Envisaged Echoes](https://genshin-impact.fandom.com/wiki/Envisaged_Echo?file=Envisaged_Echoes_Event_Menu.png)" announcement
      * TODO document used models
      */
     NEW_ACTIVITY_CHAR_MASTER_BROADCAST(4804),
 
     /**
-     * TODO identify this activity
+     * This is the 5.0 "[Dodoco's Boom-Bastic Escapades](https://genshin-impact.fandom.com/wiki/Dodoco%27s_Boom-Bastic_Escapades)" event
      * TODO document used models
      */
     NEW_ACTIVITY_BOMBER_DODOCO(5001),
 
     /**
-     * TODO identify this activity
+     * This is the 5.0 "[Of Thorns and Crowns](https://genshin-impact.fandom.com/wiki/Of_Thorns_and_Crowns)" event
      * TODO document used models
      */
     NEW_ACTIVITY_GAIN_BUFF(5002),
 
     /**
-     * TODO identify this activity
+     * This is the 5.0 "[Flowers Resplendent on the Sun-Scorched Sojourn](https://genshin-impact.fandom.com/wiki/Flowers_Resplendent_on_the_Sun-Scorched_Sojourn_(Event))" event
+     * This is the 5.1 "[The Rainbow Destined to Burn](https://genshin-impact.fandom.com/wiki/The_Rainbow_Destined_to_Burn_(Event))" event
+     * This is the 5.3 "[Incandescent Ode of Resurrection](https://genshin-impact.fandom.com/wiki/Incandescent_Ode_of_Resurrection_(Event))" event
      * TODO document used models
      */
     NEW_ACTIVITY_MAIN_LINE_BANNER(5003),
 
     /**
-     * TODO identify this activity
+     * This is the 5.3(?!) "[All Fires Fuel the Flame](https://genshin-impact.fandom.com/wiki/All_Fires_Fuel_the_Flame)(?)" announcement
      * TODO document used models
      */
     NEW_ACTIVITY_QUICK_LAUNCH_BANNER(5004),
 
     /**
-     * TODO identify this activity
+     * This is the 5.0 "[Traces of Artistry](https://genshin-impact.fandom.com/wiki/Traces_of_Artistry)" event
      * TODO document used models
      */
     NEW_ACTIVITY_NATLAN_TOUR(5005),
 
     /**
-     * TODO identify this activity
+     * This is the 5.0 "[Turbo Twirly!](https://genshin-impact.fandom.com/wiki/Turbo_Twirly!)" event
      * TODO document used models
      */
     NEW_ACTIVITY_BONUS_AVATAR_BANNER(5006),
 
     /**
-     * TODO identify this activity
+     * This is the 5.0 "[Yupanqui's Turnfire](https://genshin-impact.fandom.com/wiki/Yupanqui%27s_Turnfire_(Event))" event
+     * This is the 5.0 "[Where the Springs Return](https://genshin-impact.fandom.com/wiki/Where_the_Springs_Return_(Event))" event
+     * This is the 5.1 "[A Prayer for Blessings, Told to Crested Peaks](https://genshin-impact.fandom.com/wiki/A_Prayer_for_Blessings,_Told_to_Crested_Peaks_(Event))" event
+     * This is the 5.2 "[Of Fading Flowers and Falling Feathers](https://genshin-impact.fandom.com/wiki/Of_Fading_Flowers_and_Falling_Feathers_(Event))" event
+     * This is the 5.3 "[Memories Flowing With Color](https://genshin-impact.fandom.com/wiki/Memories_Flowing_With_Color_(Event))" event
      * TODO document used models
      */
     NEW_ACTIVITY_TRIBAL_PERSONAL_LINE_BANNER(5007),
 
     /**
-     * TODO identify this activity
+     * This is the 5.0 "[A Quest to Kindle Ancient Flames](https://genshin-impact.fandom.com/wiki/A_Quest_to_Kindle_Ancient_Flames)" event
      * TODO document used models
      */
     NEW_ACTIVITY_PERMANENT_BANNER(5008),
 
     /**
-     * TODO identify this activity
+     * This is the 5.1 "[Reminiscent Regimen: Thrill](https://genshin-impact.fandom.com/wiki/Reminiscent_Regimen/2024-10-17)" event
      * TODO document used models
      */
     NEW_ACTIVITY_COOPERATE_CHALLENGE(5101),
 
     /**
-     * TODO identify this activity
+     * This is the 5.1 "[Feast of Pursuit](https://genshin-impact.fandom.com/wiki/Feast_of_Pursuit)" event
      * TODO document used models
      */
     NEW_ACTIVITY_ARENA_CHALLENGE_V5(5102),
 
     /**
-     * TODO identify this activity
+     * This is the 5.1 "[Chromatic Ode of Candies and Roses](https://genshin-impact.fandom.com/wiki/Chromatic_Ode_of_Candies_and_Roses)" event
      * TODO document used models
      */
     NEW_ACTIVITY_NAHIDA_BIRTH(5103),
 
     /**
-     * TODO identify this activity
+     * This is the 5.1 "[Aphid Treasure Trace](https://genshin-impact.fandom.com/wiki/Aphid_Treasure_Trace)" event
      * TODO document used models
      */
     NEW_ACTIVITY_BOLTBUG_ABYSS(5104),
 
     /**
-     * TODO identify this activity
+     * This is the 5.2(!?) "[https://genshin-impact.fandom.com/wiki/Facing_the_Windborne_Cliff_and_City_of_Flowing_Ash_(Event))" event
+     * This is likely the 5.1 [Land of Vibrant Stone and Flaming Springs](https://genshin-impact.fandom.com/wiki/Land_of_Vibrant_Stone_and_Flaming_Springs_(Event))" event as well
      * TODO document used models
      */
     NEW_ACTIVITY_LIMITED_TIME_REWARD_AREA_BANNER(5105),
 
     /**
-     * TODO identify this activity
+     * This is the 5.2 "[Heated Battle Mode: Automatic Artistry](https://genshin-impact.fandom.com/wiki/Heated_Battle_Mode/2024-11-22)" event
      * TODO document used models
      */
     NEW_ACTIVITY_GCG_AUTO_BATTLE_CARD(5201),
 
     /**
-     * TODO identify this activity
+     * This is the 5.2 "[Exercise Surging Storm](https://genshin-impact.fandom.com/wiki/Exercise_Surging_Storm)" event
      * TODO document used models
      */
     NEW_ACTIVITY_MONSTER_CHESS(5202),
 
     /**
-     * TODO identify this activity
+     * This is the 5.2 "[Iktomi Spiritseeking Scrolls](https://genshin-impact.fandom.com/wiki/Iktomi_Spiritseeking_Scrolls)" event
      * TODO document used models
      */
     NEW_ACTIVITY_CEREMONY(5203),
@@ -1005,19 +1022,19 @@ Known occurrences include:
     NEW_ACTIVITY_LANTERN_RITE_V5(5204),
 
     /**
-     * TODO identify this activity
+     * This is the 5.3 "[Shuyu's Baffling Beetle Battle Bowl](https://genshin-impact.fandom.com/wiki/Shuyu%27s_Baffling_Beetle_Battle_Bowl)" event
      * TODO document used models
      */
     NEW_ACTIVITY_ELECTROHERCULES_BATTLE_V3(5301),
 
     /**
-     * TODO identify this activity
+     * This is the 5.3 "[Emblem of Steadfast Valor](https://genshin-impact.fandom.com/wiki/Emblem_of_Steadfast_Valor)" event
      * TODO document used models
      */
     NEW_ACTIVITY_NATLAN_RACE(5302),
 
     /**
-     * TODO identify this activity
+     * This is the 5.3 "[Repertoire of Myriad Melodies](https://genshin-impact.fandom.com/wiki/Repertoire_of_Myriad_Melodies)" announcement
      * TODO document used models
      */
     NEW_ACTIVITY_MUSIC_GAME_BOOK_BANNER(5303),
